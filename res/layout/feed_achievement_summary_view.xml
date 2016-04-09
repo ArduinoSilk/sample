@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/feed_common_card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <include android:id="@id/devices_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_achievement_summary_margin_left" android:layout_weight="1.0" android:layout_marginStart="@dimen/feed_achievement_summary_margin_left" layout="@layout/feed_achievement_summary_item_view" />
+            <include android:id="@id/files_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/feed_achievement_summary_item_view" />
+            <include android:id="@id/flow_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/feed_achievement_summary_margin_right" android:layout_weight="1.0" android:layout_marginEnd="@dimen/feed_achievement_summary_margin_right" layout="@layout/feed_achievement_summary_item_view" />
+        </LinearLayout>
+        <include layout="@layout/feed_common_bottom_divider" />
+    </LinearLayout>
+</FrameLayout>

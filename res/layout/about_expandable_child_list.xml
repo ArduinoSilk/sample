@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/common_title_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/child_title" android:background="@drawable/common_child_btn_up" style="@style/UtilStyle.AboutChildItem" />
+    <include layout="@layout/common_right_arrow_goto" />
+</FrameLayout>

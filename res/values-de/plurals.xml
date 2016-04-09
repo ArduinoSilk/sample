@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="share_content_category_file_item_text">
+        <item quantity="other">%1$d Elemente</item>
+        <item quantity="zero">%1$d Element</item>
+        <item quantity="one">%1$d Element</item>
+    </plurals>
+    <plurals name="share_session_trans_detail">
+        <item quantity="other">%1$d files, total %2$s</item>
+        <item quantity="zero">%1$d file, total %2$s</item>
+        <item quantity="one">%1$d file, total %2$s</item>
+    </plurals>
+    <plurals name="share_session_menu_fragment_title">
+        <item quantity="other">%1$d Dateien %2$s</item>
+        <item quantity="zero">%1$d Datei(en) %2$s</item>
+        <item quantity="one">%1$d Datei %2$s</item>
+    </plurals>
+    <plurals name="share_finish_files_count_unit">
+        <item quantity="other">Dateien</item>
+        <item quantity="zero">Datei</item>
+        <item quantity="one">Datei</item>
+    </plurals>
+</resources>

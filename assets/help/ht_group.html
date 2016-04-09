@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+	<title id="title"></title>
+<style>
+html,body,div,head,header,section,ul,li,img{margin:0;padding:0;list-style:none;font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif}.con_warp{width:86%;margin:0 auto;overflow:hidden;max-width:1000px}section{overflow:hidden;margin-top:1em;}ul li{margin-bottom:1.3em}.img_li{width:100%;min-height:100px;background:#eee;margin-top: 0.5em;}.img_li img{width:100%;display:block;}.text_li{line-height:1.2em;font-size:0.9em}@media(min-width:1000px){.con_warp{width:1000px}}#btn{margin-top:30px;padding-bottom: 20px;width: 100%;height: 34px;}#btn .btn {color:#444;height:34px;display: block;float:left;width:30%;overflow: hidden;padding-right: 4%;padding-left: 4%;margin-left: 6.5%;margin-right: 4.5%;text-align:center;font-size: 14px;line-height:20px;border: 1px solid #acacac;border-radius: 5px;vertical-align: center;}.btn span {float:left;margin-left:4px;margin-top:8px;display: block;}.btn img {float: left;margin-top: 9px;height: 16px;width: 16px;}.click {background-color: #d1d1d1;}#feadback_title{color:#757575;font-size:14px;clear:both;background:#eee;line-height: 2em;margin-bottom:0;padding-left: 7%;}#other a{font-size:16px;display:block;color:#444;padding-top:1em;padding-bottom:2em;border-bottom:1px solid #ececec;text-decoration: none;padding-left: 8%;}
+</style>
+</head>
+<body>
+	<div class="con_warp">
+		<section>
+			<ul>
+				<li>
+					<div class="text_li" id="text_li_1"></div>
+					<div class="img_li">
+						<img src="http://w.ushareit.com/w/shareit/group/img/group1.jpg" alt="" onerror="this.style.display='none'">
+					</div>
+				</li>
+				<li>
+					<div class="text_li"  id="text_li_2"></div>
+					<div class="img_li">
+						<img src="http://w.ushareit.com/w/shareit/group/img/group2.jpg" alt="" onerror="this.style.display='none'">
+					</div>
+				</li>
+				<li>
+					<div class="text_li"  id="text_li_3"></div>
+					<div class="img_li">
+						<img src="http://w.ushareit.com/w/shareit/group/img/group3.jpg" alt="" onerror="this.style.display='none'">
+					</div>
+				</li>
+				<li>
+					<div class="text_li"  id="text_li_4"></div>
+					<div class="img_li">
+						<img src="http://w.ushareit.com/w/shareit/group/img/group4.jpg" alt="" onerror="this.style.display='none'">
+					</div>
+				</li>
+			</ul>
+			<div id="btn">
+			    <a class="btn" id="shareit_group_click_helpful" onclick="collect('shareit_group_click_helpful',true);"><img src="http://w.ushareit.com/w/shareit/group/img/like.png" width="100%" alt=""> <span id="done"></span></a>
+			    <a class="btn" id="shareit_group_click_unhelpful" onclick="collect('shareit_group_click_unhelpful',false);"><img src="http://w.ushareit.com/w/shareit/group/img/dislike.png" width="100%" alt=""><span id="undone"></span></a>
+			</div>
+		</section>
+	</div>
+	<h3 id="feadback_title"></h3>
+	<div id="other">
+	    <a id="feadback_btn" class="mail" href=""></a>
+	</div>
+	<script>
+changeLang();
+function changeLang() {
+    var message_zh = {
+        titles: "群收发",
+        text_li_1: "1、请任意一个设备选择【我要接收】",
+        text_li_2: "2、其它设备均选择【我要发送】，并点击【下一步】。",
+        text_li_3: "3、接收方等待其它设备连接，发送方点击接收方的头像连接。",
+        text_li_4: "4、当所有设备都进入传送门后就可以同时收发文件了。",
+        done: "有帮助",
+        undone: "看不懂",
+        feadback_title: "您可能还需要",
+        feadback_btn:"意见反馈"
+    };
+    var message_en = {
+        titles: "Group Share",
+        text_li_1: "1.One clicks \"Receive\".",
+        text_li_2: "2.Others click \"Send\", then \"Next\".",
+        text_li_3: "3.Receiver await for others to join in.  Others click receiver's avatar to connect.",
+		text_li_4: "4.Check you are all in the same Portal. Now, everyone in the group can send files to other members. :)",
+        done: "Helpful",
+        undone: "Not helpful",
+        feadback_title: "Have any other questions",
+        feadback_btn: "Feedback"
+    };
+    var message = {};
+    try {
+        client;
+        var i = client.getDeviceInfo();
+        var oi = JSON.parse(i);
+        if (oi.app_id == "com.lenovo.anyshare.gps" && parseInt(oi.app_ver) >= 4030500) {
+            client.setOrientation(1)
+        };
+        var lang = oi.lang;
+        if (lang == "zh") {
+            message = message_zh
+        } else {
+            message = message_en
+        }
+        input(message)
+    } catch(e) {
+        var language;
+        if (navigator.appName == "Netscape") {
+            language = navigator.language
+        } else {
+            language = navigator.browserLanguage
+        }
+        if (language.indexOf("zh") > -1) {
+            message = message_zh
+        } else {
+            message = message_en
+        }
+        input(message)
+    }
+}
+function input(message) {
+    $("title").innerHTML = message.titles;
+    $("text_li_1").innerHTML = message.text_li_1;
+    $("text_li_2").innerHTML = message.text_li_2;
+    $("text_li_3").innerHTML = message.text_li_3;
+    $("text_li_4").innerHTML = message.text_li_4;
+    $("done").innerHTML = message.done;
+    $("undone").innerHTML = message.undone;
+    $("feadback_btn").innerHTML = message.feadback_btn;
+    $("feadback_title").innerHTML = message.feadback_title;
+    $('feadback_btn').setAttribute("onclick","goFeadback()");
+}
+function goFeadback(){
+    try{
+        client;
+        var i = client.getDeviceInfo();
+        var oi = JSON.parse(i);
+        if(oi.app_id == 'com.lenovo.anyshare.gps' && parseInt(oi.app_ver) >= 4030500){
+            client.handleAction("helpToFeadback", 8, "15");
+        }
+    }catch(e){
+        $('feadback_btn').removeAttribute("onclick");
+        $('feadback_btn').setAttribute("href","mailto:feedback_android@ushareit.com?subject=[Group Share] Need help");
+        console.log(e);
+    }
+}
+function collect(e, t) {
+    var hr = window.location.href;
+    var arr = hr.split('/');
+    var filename = arr[arr.length-1];
+    var idarr = filename.split('.');
+    var pid = idarr[0];
+    "shareit_group_click_helpful" == e ? ($("shareit_group_click_helpful").className = "btn click", $("shareit_group_click_unhelpful").className = "btn unclick", $("shareit_group_click_unhelpful").removeAttribute("onclick")) : ($("shareit_group_click_unhelpful").className = "btn click", $("shareit_group_click_helpful").className = "btn unclick", $("shareit_group_click_helpful").removeAttribute("onclick"));
+    try{
+        client;
+        if (t == true) {
+            client.analyticsEvent('UF_WHUseful',pid);
+        }else if(t == false){
+            client.analyticsEvent('UF_WHNoUseful',pid);
+        }
+    }catch(e){
+        console.log(e);
+    }
+}
+function $(id) {
+    return document.getElementById(id)
+};
+
+	</script>
+</body>
+</html>

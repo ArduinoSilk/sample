@@ -1,0 +1,56 @@
+.class Lcom/lenovo/anyshare/dyu;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/lenovo/anyshare/efa;
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 922
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/lenovo/anyshare/dyu;)V
+    .locals 0
+
+    .prologue
+    .line 922
+    invoke-direct {p0}, Lcom/lenovo/anyshare/dyu;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Lcom/lenovo/anyshare/dyt;
+    .locals 2
+
+    .prologue
+    .line 924
+    new-instance v0, Lcom/lenovo/anyshare/dyt;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/lenovo/anyshare/dyt;-><init>(Lcom/lenovo/anyshare/dyt;)V
+
+    return-object v0
+.end method
+
+.method public synthetic b()Lcom/lenovo/anyshare/eez;
+    .locals 1
+
+    .prologue
+    .line 1
+    invoke-virtual {p0}, Lcom/lenovo/anyshare/dyu;->a()Lcom/lenovo/anyshare/dyt;
+
+    move-result-object v0
+
+    return-object v0
+.end method

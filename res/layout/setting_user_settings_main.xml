@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/anyshare_common_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/setting_tab_common" style="@style/UtilStyle.SettingsTabText" />
+        <FrameLayout android:id="@id/settings_storage" android:background="@drawable/setting_items_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_storage" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:id="@id/settings_storage_path" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <include layout="@layout/common_right_arrow_goto" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/settings_clean_caches" android:background="@drawable/setting_items_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_clean_caches" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:id="@id/settings_cache_size" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <include layout="@layout/common_right_arrow_goto" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/setting_items_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_connect" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_connect_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_connect_button" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/settings_data_item" android:background="@drawable/setting_items_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_3g" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_3g_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_data_button" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/settings_confirm_download" android:background="@drawable/setting_items_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_confirm_download" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_confirm_download_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_confirm_download_button" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/change_language" android:background="@drawable/setting_items_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:text="@string/setting_language_change" style="@style/UtilStyle.SettingsSummaryText" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/language_tip" android:background="@drawable/main_navigation_tip_red" android:visibility="gone" android:layout_width="@dimen/main_navigation_listitemtipicon_width" android:layout_height="@dimen/main_navigation_listitemtipicon_width" android:layout_marginLeft="@dimen/setting_item_padding_right" android:layout_marginRight="@dimen/setting_item_padding_right" />
+                </LinearLayout>
+                <TextView android:id="@id/changed_language_info" android:text="@string/setting_user_transfer_report_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <include layout="@layout/common_right_arrow_goto" />
+        </FrameLayout>
+        <TextView android:text="@string/setting_tab_advanced" style="@style/UtilStyle.SettingsTabText" />
+        <FrameLayout android:background="@drawable/setting_items_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_trans_prefer_use_lan" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_trans_prefer_use_lan_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/setting_trans_prefer_use_lan" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/setting_items_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_hide" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_hide_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_hide_button" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/setting_delete_apk" android:background="@drawable/setting_items_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_delete_apk" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_delete_apk_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_delete_apk_button" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/setting_invite_free_item" android:background="@drawable/setting_items_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_invite_free" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_invite_free_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_invite_free_button" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/setting_flash_transfer" android:background="@drawable/setting_items_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_flash_transfer" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_flash_transfer_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_flash_transfer_button" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/setting_set_ap_password" android:background="@drawable/setting_items_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_set_ap_password" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_set_ap_password_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_set_ap_password_button" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/setting_widi_item" android:background="@drawable/setting_items_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_widi" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_widi_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_widi_button" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/setting_auto_update" android:background="@drawable/setting_items_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_auto_update" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_auto_update_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_auto_update_button" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/settings_transfer_report" android:background="@drawable/setting_items_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/UtilStyle.SettingsSlipItem">
+                <TextView android:text="@string/setting_user_transfer_report" style="@style/UtilStyle.SettingsSummaryText" />
+                <TextView android:text="@string/setting_user_transfer_report_info" style="@style/UtilStyle.SettingsDetailText" />
+            </LinearLayout>
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_transfer_report_button" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

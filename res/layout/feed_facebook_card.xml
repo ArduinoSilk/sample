@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/feed_common_card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="@dimen/feed_common_margin_horizontal" android:paddingTop="@dimen/feed_common_content_margin_top" android:paddingRight="@dimen/feed_common_margin_horizontal" android:paddingBottom="@dimen/feed_common_content_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon" android:layout_width="@dimen/feed_fb_icon_size" android:layout_height="@dimen/feed_fb_icon_size" android:layout_marginRight="@dimen/feed_fb_icon_marginEnd" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/feed_fb_icon_marginEnd" android:layout_alignParentStart="true" />
+            <TextView android:textSize="@dimen/feed_common_large_text_size" android:textColor="@color/feed_common_large_text_color" android:ellipsize="end" android:gravity="start" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/feed_fb_title_marginBottom" android:singleLine="true" android:layout_toLeftOf="@id/choice" android:layout_toRightOf="@id/icon" android:layout_alignParentTop="true" android:layout_toStartOf="@id/choice" android:layout_toEndOf="@id/icon" />
+            <FrameLayout android:id="@id/choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+            <TextView android:textSize="@dimen/feed_common_medium_text_size" android:textColor="@color/feed_common_medium_text_color" android:ellipsize="end" android:gravity="start" android:id="@id/adbody" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:maxEms="72" android:layout_toRightOf="@id/icon" android:layout_below="@id/title" android:layout_alignWithParentIfMissing="true" android:lineSpacingExtra="@dimen/feed_common_medium_text_line_space" android:layout_toEndOf="@id/icon" />
+            <com.facebook.ads.MediaView android:id="@id/coverimage" android:background="@color/feed_common_photo_default_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_fb_coverimage_marginTop" android:scaleType="centerCrop" android:layout_below="@id/icon" />
+        </RelativeLayout>
+        <include layout="@layout/feed_common_button" />
+        <include layout="@layout/feed_common_bottom_divider" />
+    </LinearLayout>
+</FrameLayout>

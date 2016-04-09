@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+  <title>hd_mipad</title>
+  <link rel="stylesheet" href="index.min.css">
+</head>
+<body>
+<div id="box">
+<div class="content">
+  <h1 id="head"></h1>
+  <div class="hr"></div>
+  <div id="cont">
+    
+  </div>
+  <div id="btn">
+    <a class="btn" id="btn_1" onclick="collect('btn_1',true);"><img src="like.png" width="100%" alt=""> <span id="done"></span></a>
+    <a class="btn" id="btn_2" onclick="collect('btn_2',false);"><img src="dislike.png" width="100%" alt=""><span id="undone"></span></a>
+  </div>
+</div>
+
+</div>
+
+<h2 id="xiangguan"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a href="" id="other_1"></a>
+    <a href="" id="other_2"></a>
+    <a href="" id="other_3"></a>
+    <a href="" id="other_4"></a>
+    <a href="" id="other_5"></a>
+  </div>
+</div>
+</div>
+
+<h2 id="feadback_title"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a id="feadback_btn"></a>
+  </div>
+</div>
+</div>
+</body>
+<script src="index.min.js"></script>
+<script>
+  var message_zh = {
+    title:"升级到Android 6.0（Marshmallow）系统后无法找到接收者？",
+    cont:"<p>谷歌最新推出的Android 6.0（Marshmallow）系统在应用软件权限管理方面进行了更多的限制，当您在热点模式下与接收者的连接时，需要将手机设置中将定位功能设置为开启。</p>",
+    other_1:"找不到周围的接收者？",
+    other_1_id:"hc_find",
+    other_2:"Mi pad热点启动失败？",
+    other_2_id:"hd_mipad",
+    other_3:"Nexus7热点启动失败？",
+    other_3_id:"hd_nexus7",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+
+  };
+  var message_en = {
+    title:"Why can't I locate the receiving device after upgrading to Android M",
+    cont:"<p>The latest Android M system from Google has set more restrictions on apps permissions. When connecting to the receiving device via hotspot, you need to enable </p><br><p>location services in system settings.</p>",
+    other_1:"Why can’t I find receivers around me",
+    other_1_id:"hc_find",
+    other_2:"Failed to open hotspot on Mi Pad?",
+    other_2_id:"hd_mipad",
+    other_3:"Failed to open hotspot on Nexus7?",
+    other_3_id:"hd_nexus7",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+  };
+changeLang(message_zh,message_en);
+</script>
+</html>

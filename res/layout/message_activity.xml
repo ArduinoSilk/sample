@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/anyshare_common_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.anyshare.widget.listview.PullToRefreshListView android:layout_gravity="center" android:id="@id/message_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#fff0ede6" android:dividerHeight="0.0px" />
+    <FrameLayout android:id="@id/hint" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/hint_info" style="@style/MessageStyle.HintInfo" />
+    </FrameLayout>
+    <include android:id="@id/progress" layout="@layout/common_loading_progress_grey" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center|top" android:id="@id/info_icon" android:background="@drawable/common_result_empty" android:layout_width="@dimen/main_personal_message_info_icon_width" android:layout_height="@dimen/main_personal_message_info_icon_height" />
+        <TextView android:textSize="@dimen/main_personal_message_info_text_textSize" android:textColor="#ffa4a4a4" android:layout_gravity="center_horizontal" android:id="@id/info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_personal_message_info_text_marginTop" android:text="@string/common_tip_network_failed" />
+    </LinearLayout>
+</FrameLayout>

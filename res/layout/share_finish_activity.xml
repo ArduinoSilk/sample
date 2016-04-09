@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/finish_view" android:background="@color/share_discover_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.anyshare.share.summary.RevolveView android:layout_gravity="center" android:id="@id/revolveview" android:layout_width="@dimen/share_finish_revolve_small_circle_layout_width" android:layout_height="@dimen/share_finish_revolve_small_circle_layout_width" android:layout_marginBottom="@dimen/share_finish_revolve_margin_bottom" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/file_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/share_finish_info_margintop">
+        <TextView android:textSize="@dimen/share_finish_info_size" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/file_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/share_finish_info_marginbottom" android:text="@string/share_finish_info" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.lenovo.anyshare.widget.NumberRunTextView android:textSize="@dimen/share_finish_number_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/file_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/share_finish_number_unit_size" android:textColor="#ffffffff" android:id="@id/file_count_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/share_finish_number_marginright" android:layout_marginEnd="@dimen/share_finish_number_marginright" />
+            <com.lenovo.anyshare.widget.NumberRunTextView android:textSize="@dimen/share_finish_number_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/share_finish_number_unit_size" android:textColor="#ffffffff" android:id="@id/file_size_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

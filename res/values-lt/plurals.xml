@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="share_content_category_file_item_text">
+        <item quantity="other">%1$d elementai</item>
+        <item quantity="zero">%1$d elementas</item>
+        <item quantity="one">%1$d elementas</item>
+    </plurals>
+    <plurals name="share_session_trans_detail">
+        <item quantity="other">%1$d files, total %2$s</item>
+        <item quantity="zero">%1$d file, total %2$s</item>
+        <item quantity="one">%1$d file, total %2$s</item>
+    </plurals>
+    <plurals name="share_session_menu_fragment_title">
+        <item quantity="other">%1$d failai %2$s</item>
+        <item quantity="zero">%1$d failas (-ai) %2$s</item>
+        <item quantity="one">%1$d failas (-ai) %2$s</item>
+    </plurals>
+    <plurals name="share_finish_files_count_unit">
+        <item quantity="other">failai</item>
+        <item quantity="zero">failas</item>
+        <item quantity="one">failas</item>
+    </plurals>
+</resources>

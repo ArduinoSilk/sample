@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+  <title></title>
+  <link rel="stylesheet" href="index.min.css">
+</head>
+<body>
+<div id="box">
+<div class="content">
+  <h1 id="head"></h1>
+  <div class="hr"></div>
+  <div id="cont">
+    
+  </div>
+  <div id="btn">
+    <a class="btn" id="btn_1" onclick="collect('btn_1',true);"><img src="like.png" width="100%" alt=""> <span id="done"></span></a>
+    <a class="btn" id="btn_2" onclick="collect('btn_2',false);"><img src="dislike.png" width="100%" alt=""><span id="undone"></span></a>
+  </div>
+</div>
+
+</div>
+
+<h2 id="xiangguan"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a href="" id="other_1"></a>
+    <a href="" id="other_2"></a>
+    <a href="" id="other_3"></a>
+    <a href="" id="other_4"></a>
+    <a href="" id="other_5"></a>
+  </div>
+</div>
+</div>
+
+<h2 id="feadback_title"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a id="feadback_btn"></a>
+  </div>
+</div>
+</div>
+</body>
+<script src="index.min.js"></script>
+<script>
+  var message_zh = {
+    title:"Yuphoria手机无法完整显示界面？",
+    cont:"<p>Yuphoria手机运行基于Android 5.0的Cyanogen OS 12操作系统，此系统采用的软键盘会与茄子底部功能按钮重合，导致茄子无法正常使用。<br><br>如果您是此机型用户，请协助我们解决此问题，将截图或文字描述通过页面下的帮助反馈发给我们。<br><br>或者尝试升级到我们的最新版本。</p>",
+    other_1:"",
+    other_1_id:"",
+    other_2:"",
+    other_2_id:"",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+
+  };
+  var message_en = {
+    title:"SHAREit screen overlaps your phone menu buttons?",
+    cont:"<p>We have already solved the problem, please update SHAREit to latest version.</p>",
+    other_1:"",
+    other_1_id:"",
+    other_2:"",
+    other_2_id:"",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+  };
+changeLang(message_zh,message_en);
+</script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+  <title></title>
+  <link rel="stylesheet" href="index.min.css">
+</head>
+<body>
+<div id="box">
+<div class="content">
+  <h1 id="head"></h1>
+  <div class="hr"></div>
+  <div id="cont"></div>
+  <div id="btn">
+    <a class="btn" id="btn_1" onclick="collect('btn_1',true);"><img src="like.png" width="100%" alt=""> <span id="done"></span></a>
+    <a class="btn" id="btn_2" onclick="collect('btn_2',false);"><img src="dislike.png" width="100%" alt=""><span id="undone"></span></a>
+  </div>
+</div>
+</div>
+<h2 id="xiangguan"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a href="" id="other_1"></a>
+    <a href="" id="other_2"></a>
+    <a href="" id="other_3"></a>
+    <a href="" id="other_4"></a>
+    <a href="" id="other_5"></a>
+  </div>
+</div>
+</div>
+<h2 id="feadback_title"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a id="feadback_btn"></a>
+  </div>
+</div>
+</div>
+</body>
+<script src="index.min.js"></script>
+<script>
+  var message_zh = {
+    title:"接收到的文件无法打开？应用程序无法安装？",
+    cont:"<p>1、传输过程中可能由于网络错误导致部分数据丢失，而无法打开文件，可以尝试重新传输。</p><p>2、手机中没有用于打开此类文件的应用。</p><p>3、接收到的应用由于版本，签名和对系统要求等原因，可能导致无法安装。</p>",
+    other_1:"",
+    other_1_id:"",
+    other_2:"",
+    other_2_id:"",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+  };
+  var message_en = {
+    title:"Cannot open received files? Cannot install received apk?",
+    cont:"<p>1. Some data loss caused by network error may result in failure to open the files , please try again to transfer.</p><p>2. No matched apps to open this kind of files.</p><p>3. Unmatched app version, signature and operation system may lead to failure in installation.</p>",
+    other_1:"",
+    other_1_id:"",
+    other_2:"",
+    other_2_id:"",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:"",
+  };
+changeLang(message_zh,message_en);
+</script>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/feed_common_card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/feed_common_titlebar" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_common_margin_horizontal" android:layout_marginTop="@dimen/feed_thumb_margin_top" android:layout_marginRight="@dimen/feed_common_margin_horizontal" android:layout_marginBottom="@dimen/feed_common_content_margin_bottom">
+            <ImageView android:layout_gravity="start|center" android:id="@id/thumb" android:layout_width="@dimen/feed_thumb_icon_width" android:layout_height="@dimen/feed_thumb_icon_height" android:layout_marginRight="@dimen/feed_thumb_icon_margin_end" android:scaleType="fitCenter" android:layout_marginEnd="@dimen/feed_thumb_icon_margin_end" />
+            <TextView android:textSize="@dimen/feed_common_medium_text_size" android:textColor="@color/feed_common_medium_text_color" android:ellipsize="end" android:gravity="start" android:layout_gravity="start|center" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingExtra="@dimen/feed_common_medium_text_line_space" />
+        </LinearLayout>
+        <include layout="@layout/feed_common_button" />
+        <include layout="@layout/feed_common_bottom_divider" />
+    </LinearLayout>
+</FrameLayout>

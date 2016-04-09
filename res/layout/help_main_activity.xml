@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/debug_mode_hint" android:background="#ffeeeeee" android:padding="@dimen/help_debug_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/help_debug_padding">
+            <TextView android:textSize="@dimen/help_debug_textsize" android:textColor="#ff444444" android:gravity="start|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/help_debug_path_marginleft" android:text="@string/help_enter_debug_mode" android:layout_weight="1.0" android:layout_marginStart="@dimen/help_debug_path_marginleft" />
+            <com.lenovo.anyshare.widget.SlipButton android:layout_gravity="end|center" android:id="@id/close" android:layout_width="@dimen/setting_slip_button_width" android:layout_height="@dimen/setting_slip_button_height" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="#fff6f8fa" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/help_debug_textsize" android:textColor="#ff444444" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/help_debug_path_marginleft" android:text="@string/help_log_path" android:layout_marginStart="@dimen/help_debug_path_marginleft" />
+            <TextView android:textSize="@dimen/help_debug_textsize" android:textColor="@color/common_highlight_textcolor" android:gravity="center|left" android:id="@id/hint" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/help_debug_path_marginleft" android:layout_weight="1.0" android:layout_marginStart="@dimen/help_debug_path_marginleft" />
+            <ImageView android:id="@id/sendto" android:background="#ffe1e1e1" android:padding="@dimen/help_debug_padding" android:layout_width="@dimen/help_debug_email_width" android:layout_height="@dimen/help_debug_email_height" android:src="@drawable/common_email" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:gravity="center" android:id="@id/help_main_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@android:color/transparent" android:dividerHeight="1.0px" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/more_feedback" android:background="@drawable/common_content_list_child_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/help_main_more_feedback_text_size" android:textColor="@color/common_highlight_textcolor" android:gravity="center" android:layout_gravity="center_horizontal" android:paddingTop="@dimen/help_main_more_feedback_padding_vertical" android:paddingBottom="@dimen/help_main_more_feedback_padding_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help_feedback" android:drawableLeft="@drawable/help_feedback_normal" android:drawablePadding="@dimen/help_main_more_feedback_drawable_padding" />
+    </LinearLayout>
+</LinearLayout>

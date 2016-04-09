@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/files_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center|left|top" android:id="@id/file_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/anyshare_content_file_view_toparea_size">
+        <ListView android:gravity="center" android:id="@id/file_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="@dimen/common_listview_divider_height" />
+    </FrameLayout>
+    <include android:gravity="center_vertical" android:id="@id/anyshare_content_file_toparea_view" android:layout_width="fill_parent" android:layout_height="@dimen/anyshare_content_file_view_toparea_size" layout="@layout/content_category_file_tilte_layout" />
+    <ListView android:gravity="center" android:id="@id/file_menu_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="@dimen/anyshare_content_file_view_progress_bar_size" android:layout_height="@dimen/anyshare_content_file_view_progress_bar_size" android:indeterminateDrawable="@drawable/common_progressbar_rotate_orange_bg" />
+    <TextView android:textSize="@dimen/item_subtitle_text_size" android:textColor="@color/item_title_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/file_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

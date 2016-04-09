@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/share_btn" android:background="@drawable/common_share_bg_white" android:layout_width="@dimen/common_title_image_button_width" android:layout_height="@dimen/common_title_height" />
+    <FrameLayout android:id="@id/download_view" android:visibility="gone" android:layout_width="@dimen/common_title_image_button_width" android:layout_height="@dimen/common_title_height" android:layout_marginRight="@dimen/common_title_layout_margin_right" android:layout_marginEnd="@dimen/common_title_layout_margin_right">
+        <Button android:id="@id/download_btn" android:background="@drawable/common_download_manager_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/download_tip" android:background="@drawable/common_score_award_red" android:visibility="gone" android:layout_width="@dimen/browser_download_tip_width" android:layout_height="@dimen/browser_download_tip_height" android:layout_marginRight="@dimen/browser_download_tip_marginright" android:layout_marginBottom="@dimen/browser_download_tip_marginbotton" android:layout_marginEnd="@dimen/browser_download_tip_marginright" />
+    </FrameLayout>
+</LinearLayout>

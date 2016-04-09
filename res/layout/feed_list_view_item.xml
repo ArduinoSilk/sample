@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/feed_common_item_bg" android:paddingLeft="@dimen/feed_common_margin_horizontal" android:paddingRight="@dimen/feed_common_margin_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/feed_list_item_padding_top" android:paddingBottom="@dimen/feed_list_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="start|center" android:id="@id/icon" android:layout_width="@dimen/feed_list_icon_size" android:layout_height="@dimen/feed_list_icon_size" android:layout_marginLeft="@dimen/feed_list_icon_marigin_start" android:layout_marginRight="@dimen/feed_list_icon_marigin_end" android:scaleType="fitCenter" android:layout_marginStart="@dimen/feed_list_icon_marigin_start" android:layout_marginEnd="@dimen/feed_list_icon_marigin_end" />
+        <LinearLayout android:gravity="start|center" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/feed_list_icon_size">
+            <TextView android:textSize="@dimen/feed_common_medium_text_size" android:textColor="@color/feed_common_large_text_color" android:ellipsize="end" android:gravity="start" android:layout_gravity="start|center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/feed_common_small_text_size" android:textColor="@color/feed_common_medium_text_color" android:ellipsize="end" android:gravity="start" android:layout_gravity="start|center" android:id="@id/desc" android:paddingTop="@dimen/feed_list_desc_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="@dimen/feed_common_medium_text_line_space" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/list_drivider" layout="@layout/feed_list_drivider" />
+</LinearLayout>

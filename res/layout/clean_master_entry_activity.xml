@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_entry_activity_bg" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:background="@drawable/common_entry_activity_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/cloneit_title_height">
+            <ImageButton android:layout_gravity="start|center" android:id="@id/left_back" android:background="@drawable/common_titlebar_return_bg" android:layout_width="@dimen/cleanit_return_view_width" android:layout_height="@dimen/cleanit_return_view_height" android:layout_marginLeft="@dimen/cleanit_return_view_margin_left" android:layout_marginStart="@dimen/cleanit_return_view_margin_left" />
+            <TextView android:textSize="@dimen/cleanit_title_text_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clean_name" android:singleLine="true" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:background="@drawable/clean_entry_clear_icon" android:layout_width="@dimen/cleanit_clear_icon_width" android:layout_height="@dimen/cleanit_clear_icon_height" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <FrameLayout android:background="@drawable/common_btn_up" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/clean_entry_cache" style="@style/CleanStyle.ListItemText" />
+            <ImageView android:background="@drawable/clean_entry_cache_icon" style="@style/CleanStyle.ListItemIcon" />
+            <TextView android:text="@string/clean_entry_cache_intro" style="@style/CleanStyle.ItemIntroText" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/common_btn_up" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/clean_entry_uninstall" style="@style/CleanStyle.ListItemText" />
+            <ImageView android:background="@drawable/clean_entry_uninstall_icon" style="@style/CleanStyle.ListItemIcon" />
+            <TextView android:text="@string/clean_entry_uninstall_intro" style="@style/CleanStyle.ItemIntroText" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/common_btn_up" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/clean_entry_cleanup" style="@style/CleanStyle.ListItemText" />
+            <ImageView android:background="@drawable/clean_entry_cleanup_icon" style="@style/CleanStyle.ListItemIcon" />
+            <TextView android:text="@string/clean_entry_cleanup_intro" style="@style/CleanStyle.ItemIntroText" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/common_btn_up" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/clean_entry_apk" style="@style/CleanStyle.ListItemText" />
+            <ImageView android:background="@drawable/clean_entry_apk_icon" style="@style/CleanStyle.ListItemIcon" />
+            <TextView android:text="@string/clean_entry_apk_intro" style="@style/CleanStyle.ItemIntroText" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/download" android:background="@drawable/common_capsule_button_filled_blue" android:paddingLeft="@dimen/cleanit_download_padding" android:paddingRight="@dimen/cleanit_download_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="@dimen/cleanit_framelayout_mWindth" android:minHeight="@dimen/cleanit_framelayout_mHeight" />
+                <com.lenovo.anyshare.widget.MaskProgressBar android:layout_gravity="center" android:id="@id/download_progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="@dimen/cleanit_framelayout_mWindth" android:minHeight="@dimen/cleanit_framelayout_mHeight" />
+                <TextView android:textSize="@dimen/cleanit_download_status_textSize" android:textColor="#ffffffff" android:gravity="center" android:id="@id/download_status" android:paddingLeft="@dimen/cleanit_download_status_padding" android:paddingRight="@dimen/cleanit_download_status_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="@dimen/cleanit_framelayout_mWindth" android:minHeight="@dimen/cleanit_framelayout_mHeight" android:text="@string/clean_download" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

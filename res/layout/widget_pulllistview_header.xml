@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/listview_header_content" android:layout_width="wrap_content" android:layout_height="@dimen/widget_pulllist_header_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/listview_header_arrow" android:layout_width="@dimen/widget_pulllist_header_right_width" android:layout_height="@dimen/widget_pulllist_header_right_width" android:src="@drawable/widget_pulllist_arrow_down_white" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/listview_header_progressbar" android:visibility="gone" android:layout_width="@dimen/widget_pulllist_header_right_width" android:layout_height="@dimen/widget_pulllist_header_right_width" android:indeterminateDrawable="@drawable/common_loading_small_white" />
+        <TextView android:textSize="@dimen/widget_pulllist_header_textsize" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/listview_header_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_pulllist_header_text_marginleft" android:text="@string/common_tip_pull_refresh" android:singleLine="true" android:layout_marginStart="@dimen/widget_pulllist_header_text_marginleft" />
+    </LinearLayout>
+</FrameLayout>

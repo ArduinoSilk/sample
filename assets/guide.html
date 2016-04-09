@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+	<title id="title"></title>
+
+<style>
+html,body,div,head,header,section,ul,li,img{margin:0;padding:0;list-style:none;font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif}.con_warp{width:86%;margin:0 auto;overflow:hidden;max-width:1000px}header{overflow:hidden;margin-bottom:1.4em;margin-top:1em;display:table}.logo_head{float:left;width:25%;height:100%;display:table-cell;vertical-align:middle}.logo_head img{width:100%;display:block;}.title_head{display:table-cell;vertical-align:middle;width:70%;margin-left:5%;float:right;font-size:0.9em;line-height:1.5em;font-weight:normal;color:#191919}section{overflow:hidden}ul li{margin-bottom:1.3em}.img_li{width:100%;min-height:100px;background:#eee;}.img_li img{width:100%;display:block;}.text_li{line-height:1.2em;margin-top:0.5em;font-size:0.9em}@media(min-width:1000px){.con_warp{width:1000px}}
+</style>
+</head>
+<body>
+	<div class="con_warp">
+		<header>
+			<div class="logo_head">
+				<img src="http://w.ushareit.com/w/shareit/guide/images/logo.jpg">
+			</div>
+			<div class="title_head" id="title_head"></div>
+		</header>
+		<section>
+			<ul>
+				<li>
+					<div class="img_li">
+						<img src="http://w.ushareit.com/w/shareit/guide/images/guide1.jpg" alt="">
+					</div>
+					<div class="text_li" id="text_li_1"></div>
+				</li>
+				<li>
+					<div class="img_li">
+						<img src="http://w.ushareit.com/w/shareit/guide/images/guide2.jpg" alt="">
+					</div>
+					<div class="text_li"  id="text_li_2"></div>
+				</li>
+				<li>
+					<div class="img_li">
+						<img src="http://w.ushareit.com/w/shareit/guide/images/guide3.jpg" alt="">
+					</div>
+					<div class="text_li"  id="text_li_3"></div>
+				</li>
+			</ul>
+		</section>
+	</div>
+
+	<script>
+changeLang();function changeLang(){var message_zh={titles:" 新手上路",title_head:"茄子快传是一个免费的应用程序。你可以在智能手机、平板电脑和个人电脑之间随意传输各种文件以及文件夹。",text_li_1:"传输速度超级快，完全不消耗手机流量。",text_li_2:"可以分享手机上的任何文件。",text_li_3:"至少有2个设备才能互相传输呦！<br>一人选发送，另一人选接收。"};var message_en={titles:"Beginners' guide",title_head:"SHAREit is a free application that lets you share files and folders among smartphones, tablets, and personal computers.",text_li_1:"No need of network or mobile data, 200 times faster than Bluetooth.",text_li_2:"Transfer whatever you have.<br>Any type of files, folders and media.",text_li_3:"Transfer can only be achieved by at least 2 devices.<br> One phone tap 'Send', others tap 'Receive'."};var message={};try{client;var i=client.getDeviceInfo();var oi=JSON.parse(i);var lang=oi.lang;if(lang=="zh"){message=message_zh}else{message=message_en}console.log(message);input(message)}catch(e){var language;if(navigator.appName=="Netscape"){language=navigator.language}else{language=navigator.browserLanguage}if(language.indexOf("zh")>-1){message=message_zh}else{message=message_en}console.log(message);input(message)}}function input(message){$("title").innerHTML=message.titles;$("title_head").innerHTML=message.title_head;$("text_li_1").innerHTML=message.text_li_1;$("text_li_2").innerHTML=message.text_li_2;$("text_li_3").innerHTML=message.text_li_3}function $(id){return document.getElementById(id)};
+
+	</script>
+</body>
+</html>

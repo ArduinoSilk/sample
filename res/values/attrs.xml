@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="adSize" format="string" />
+    <attr name="adSizes" format="string" />
+    <attr name="adUnitId" format="string" />
+    <attr name="start" format="reference" />
+    <attr name="wait" format="reference" />
+    <attr name="compelete" format="reference" />
+    <attr name="color" format="integer" />
+    <attr name="drawSelectorOnTop" format="boolean" />
+    <attr name="numColumns" format="integer" />
+    <attr name="layoutManager" format="string" />
+    <attr name="spanCount" format="integer" />
+    <attr name="reverseLayout" format="boolean" />
+    <attr name="stackFromEnd" format="boolean" />
+</resources>

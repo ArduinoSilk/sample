@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.anyshare.share.discover.widget.ConnectDeviceSurfaceView android:id="@id/connect_animation_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/share_discover_progress_info_text_size" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/connect_progress_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/share_discover_progress_info_margin_bottom" android:text="@string/share_discover_connect_for_send" />
+</merge>

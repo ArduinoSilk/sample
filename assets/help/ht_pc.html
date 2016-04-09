@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+  <title></title>
+  <link rel="stylesheet" href="index.min.css">
+</head>
+<body>
+<div id="box">
+<div class="content">
+  <h1 id="head"></h1>
+  <div class="hr"></div>
+  <div id="cont">
+    
+  </div>
+  <div id="btn">
+    <a class="btn" id="btn_1" onclick="collect('btn_1',true);"><img src="like.png" width="100%" alt=""> <span id="done"></span></a>
+    <a class="btn" id="btn_2" onclick="collect('btn_2',false);"><img src="dislike.png" width="100%" alt=""><span id="undone"></span></a>
+  </div>
+</div>
+
+</div>
+
+<h2 id="xiangguan"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a href="" id="other_1"></a>
+    <a href="" id="other_2"></a>
+    <a href="" id="other_3"></a>
+    <a href="" id="other_4"></a>
+    <a href="" id="other_5"></a>
+  </div>
+</div>
+</div>
+
+<h2 id="feadback_title"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a id="feadback_btn"></a>
+  </div>
+</div>
+</div>
+</body>
+<script src="index.min.js"></script>
+<script>
+  var message_zh = {
+    title:"Android手机如何与电脑传输文件？",
+    cont:"<p><b>电脑发文件给手机：</b></p><p>电脑端：</p><p>1. 安装并打开茄子快传电脑版；</p><p>2. 在主页面点击【我要发送】按钮；</p><p>3.选择传送的文件后，点击【下一步】；</p><p>4. 进入搜索页面，点选接收方的头像。</p><p>手机端：</p><p>在主页面点击【我要接收】按钮后，请等待。</p><p>（注：如果电脑端没有发现手机端头像，请在当前页面底部点击【连接电脑】-〉【开启同网模式】）</p><br><p><b>手机发文件给电脑：</b></p><p>手机端：</p><p>1. 在主页面点击【我要发送】按钮；</p><p>2. 选择传送的文件后，点击【发送】；</p><p>3. 在【选择接收者】页面点选接收方头像。</p><p>电脑端：</p><p>1. 安装并打开茄子快传电脑版；</p><p>2. 在主页面点击【我要接收】按钮。</p><p>（注：如果手机端没有发现电脑端头像，请在电脑端当前页面底部，点击【切换为同网模式】）</p>",
+    other_1:"Android手机如何与苹果手机互传文件？",
+    other_1_id:"ht_ios",
+    other_2:"",
+    other_2_id:"",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+
+  };
+  var message_en = {
+    title:"How to transfer files between Android devices and PC?",
+    cont:"<p><b>[Send files from PC to Android devices]</b></p><p>On PC</p><p>1. Install and launch SHAREit on PC</p><p>2. Click Send on home page</p><p>3. Select the files you want to send, and click Next</p><p>4. Select receiver's avatar in the search page</p><p>On Android Devices</p><p>Click Receive on home page and wait for the operation complete.(Tip If the avatar on Android devices hasn't been found on PC, please click Connect to PC at the bottom of the searching page on Android device and Open the same network mode.</p><br><p><b>[Send files from Android devices to PC]</b></p><p>On Android devices</p><p>1. Tap Send on Home page</p><p>2. Select the files you want to send, and tap Send</p><p>3. Choose the receiver's avatar on Select Receiver page.</p><p>On PC</p><p>1. Install and launch SHAREit on PC</p><p>2. Tap Receive on Home page</p><p>(Tips If the avatar on PC hasn't been found on Android devices , please find and click Same Wi-Fi Mode at the bottom of the searching page on PC SHAREit and then search the Android device.)</p>",
+    other_1:"How to transfer files between Android and iOS devices?",
+    other_1_id:"ht_ios",
+    other_2:"",
+    other_2_id:"",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+  };
+changeLang(message_zh,message_en);
+</script>
+</html>

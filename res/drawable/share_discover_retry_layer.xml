@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/share_discover_scan_device_icon_bg" />
+    <item android:drawable="@drawable/share_discover_retry" android:left="@dimen/share_discover_retry_png_padding" android:top="@dimen/share_discover_retry_png_padding" android:right="@dimen/share_discover_retry_png_padding" android:bottom="@dimen/share_discover_retry_png_padding" />
+    <item android:drawable="@drawable/share_discover_scan_device_icon_pressed_bg" android:left="@dimen/share_discover_retry_png_padding" android:top="@dimen/share_discover_retry_png_padding" android:right="@dimen/share_discover_retry_png_padding" android:bottom="@dimen/share_discover_retry_png_padding" />
+</layer-list>

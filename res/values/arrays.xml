@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main">
+        <item>@string/item_main_title</item>
+        <item>@string/item_main_desc1</item>
+        <item>@string/item_main_desc2</item>
+        <item>\#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.lenovo.anyshare/com.lenovo.anyshare.ApMainActivity;end</item>
+    </string-array>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.anyshare.share.summary.SmallCircleView android:id="@id/small_circle" android:visibility="gone" android:layout_width="@dimen/share_finish_revolve_small_circle_layout_width" android:layout_height="@dimen/share_finish_revolve_small_circle_layout_width" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/circle" android:layout_width="@dimen/share_finish_revolve_width" android:layout_height="@dimen/share_finish_revolve_width" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/showview" android:layout_width="@dimen/share_finish_revolve_breathe_width" android:layout_height="@dimen/share_finish_revolve_breathe_width" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/image_content" android:layout_width="@dimen/share_finish_revolve_inside_width" android:layout_height="@dimen/share_finish_revolve_inside_width" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/image_breathe" android:visibility="gone" android:layout_width="@dimen/share_finish_revolve_breathe_width" android:layout_height="@dimen/share_finish_revolve_breathe_width" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:gravity="center" android:id="@id/hideview" android:visibility="gone" android:layout_width="@dimen/share_finish_revolve_inside_width" android:layout_height="@dimen/share_finish_revolve_inside_width" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/speed_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/share_finish_number_size" android:textColor="#ffffffff" android:id="@id/revolve_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/share_finish_revolve_textsize" android:textColor="#ffffffff" android:id="@id/revolve_file_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/share_finish_revolve_textmargin" android:layout_marginBottom="@dimen/share_finish_revolve_textmargin" android:layout_marginStart="@dimen/share_finish_revolve_textmargin" />
+            </LinearLayout>
+            <View android:id="@id/line" android:background="@color/anyshare_content_list_child_bg_normal" android:layout_width="@dimen/share_finish_revolve_line_width" android:layout_height="1.0dip" android:layout_below="@id/speed_text_layout" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/share_finish_revolve_textsize" android:textColor="#ffffffff" android:gravity="center" android:layout_width="@dimen/share_finish_revolve_text_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/share_finish_revolve_line_marginbottom" android:text="@string/share_finish_velocity" android:layout_below="@id/line" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

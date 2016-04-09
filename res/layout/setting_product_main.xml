@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/setting_product_layout_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:text="@string/setting_hotlist_display_invisible" style="@style/UtilStyle.SettingsProductTitleText" />
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_hotlist_visible" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:text="@string/setting_support_preconnect" style="@style/UtilStyle.SettingsProductTitleText" />
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_support_preconnect" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:text="@string/setting_use_dev_server" style="@style/UtilStyle.SettingsProductTitleText" />
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_use_dev_server" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/setting_scan_first" style="@style/UtilStyle.SettingsProductTitleText" />
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_scan_first" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/setting_debug_logger" style="@style/UtilStyle.SettingsProductTitleText" />
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_logger_level" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/setting_display_allcard" style="@style/UtilStyle.SettingsProductTitleText" />
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_display_allcard" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/setting_display_trans_summary" style="@style/UtilStyle.SettingsProductTitleText" />
+            <com.lenovo.anyshare.widget.SlipButton android:id="@id/settings_display_trans_summary" style="@style/UtilStyle.SettingsSlipButton" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/web_url" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="textUri" />
+            <include android:id="@id/web_go" layout="@layout/common_right_arrow_goto" />
+        </LinearLayout>
+        <TextView android:id="@id/display_channel_info" style="@style/UtilStyle.SettingsProductTitleTextNoSlipButton" />
+        <TextView android:id="@id/display_referer_info" android:text="@string/setting_display_referer_info" style="@style/UtilStyle.SettingsProductTitleTextNoSlipButton" />
+        <TextView android:id="@id/display_network_manager" style="@style/UtilStyle.SettingsProductTitleTextNoSlipButton" />
+        <TextView android:id="@id/display_device_id" style="@style/UtilStyle.SettingsProductTitleTextNoSlipButton" />
+        <TextView android:id="@id/display_cloud_config" android:text="@string/setting_display_cloud_config" style="@style/UtilStyle.SettingsProductTitleTextNoSlipButton" />
+        <TextView android:id="@id/display_ccm_config" android:text="@string/setting_display_ccm_config" style="@style/UtilStyle.SettingsProductTitleTextNoSlipButton" />
+        <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/p2p_items" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="@dimen/common_title_text_size" android:textColor="@color/item_title_text_color" android:id="@id/p2p_server" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_p2p_item1" />
+            <RadioButton android:textSize="@dimen/common_title_text_size" android:textColor="@color/item_title_text_color" android:id="@id/p2p_broadcast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_p2p_item2" />
+            <RadioButton android:textSize="@dimen/common_title_text_size" android:textColor="@color/item_title_text_color" android:id="@id/p2p_multicast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_p2p_item3" />
+            <RadioButton android:textSize="@dimen/common_title_text_size" android:textColor="@color/item_title_text_color" android:id="@id/p2p_traverse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_p2p_item4" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

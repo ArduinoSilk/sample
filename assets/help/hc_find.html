@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+  <title></title>
+  <link rel="stylesheet" href="index.min.css">
+</head>
+<body>
+<div id="box">
+<div class="content">
+  <h1 id="head"></h1>
+  <div class="hr"></div>
+  <div id="cont">
+    
+  </div>
+  <div id="btn">
+    <a class="btn" id="btn_1" onclick="collect('btn_1',true);"><img src="like.png" width="100%" alt=""> <span id="done"></span></a>
+    <a class="btn" id="btn_2" onclick="collect('btn_2',false);"><img src="dislike.png" width="100%" alt=""><span id="undone"></span></a>
+  </div>
+</div>
+
+</div>
+
+<h2 id="xiangguan"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a href="" id="other_1"></a>
+    <a href="" id="other_2"></a>
+    <a href="" id="other_3"></a>
+    <a href="" id="other_4"></a>
+    <a href="" id="other_5"></a>
+  </div>
+</div>
+</div>
+
+<h2 id="feadback_title"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a id="feadback_btn"></a>
+  </div>
+</div>
+</div>
+</body>
+<script src="index.min.js"></script>
+<script>
+  var message_zh = {
+    title:"找不到周围的接收者？",
+    cont:"<p>首先检查发送方的手机无线功能是否正常，可以扫描到周围的无线网络信号。</p><p>其次检查接收方手机是否成功建立了热点。</p><p>完成上述检查后，可以重新尝试启动茄子快传进行收发连接。</p><br><p>还有一种情况是接收方选择了【传输时优先局域网】模式，但发送方并没有连接相同的局域网。</p><p>解决方法：</p><p>1.将发送方设备连接到与接收方相同的网络即可。</p><p>2.或者请接收方在设置中关闭【传输时优先局域网】模式。</p><br><p>其它可能的解决建议：</p><p>1.清理本机的后台应用。</p><p>2.收发双方交换角色，发送方点我要接收，接受方点我要发送，再次尝试连接。</p>",
+    other_1:"热点启动失败？",
+    other_1_id:"hc_startap",
+    other_2:"升级到Android 6.0（Marshmallow）系统后无法找到接收者？",
+    other_2_id:"hd_android6",
+    other_3:"Mi pad热点启动失败？",
+    other_3_id:"hd_mipad",
+    other_4:"Nexus7热点启动失败？",
+    other_4_id:"hd_nexus7",
+    other_5:"",
+    other_5_id:""
+
+  };
+  var message_en = {
+    title:"Why can’t I find receivers around me?",
+    cont:"<p>Firstly, verify that if the Wi-Fi network of sender is working properly, which is, able to scan the signals of Wi-Fi networks nearby.</p><p>Next, verify that if the hotspot has been set up properly on receiver.</p><p>Once above tests have been completed, please restart SHAREit and try again.</p><br><p>Another possible situation is that the 'Prefer Wi-Fi Mode' has been enabled on receiving devices, but actually the sender has not been connected to the same Wi-Fi network.</p><p>Solutions</p><p>1. Put the sender and receiver in the same Wi-Fi network.</p><p>2. Close 'Prefer Wi-Fi Mode' on receiver.</p><br><p>Other possible solutions</p><p>1. Clean up background apps on devices</p><p>2. Switch roles of the sender and receiver (i.e. tap 'Receive' on the sending device, and 'Send' on the receiving device) and try again.</p>",
+    other_1:"Why can’t I activate hotspot?",
+    other_1_id:"hc_startap",
+    other_2:"Why can't I locate the receiving device after upgrading to Android M?",
+    other_2_id:"hd_android6",
+    other_3:"Failed to open hotspot on Mi Pad?",
+    other_3_id:"hd_mipad",
+    other_4:"Failed to open hotspot on Nexus7?",
+    other_4_id:"hd_nexus7",
+    other_5:"",
+    other_5_id:""
+  };
+changeLang(message_zh,message_en);
+</script>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+  <title>hd_mipad</title>
+  <link rel="stylesheet" href="index.min.css">
+</head>
+<body>
+<div id="box">
+<div class="content">
+  <h1 id="head"></h1>
+  <div class="hr"></div>
+  <div id="cont">
+    
+  </div>
+  <div id="btn">
+    <a class="btn" id="btn_1" onclick="collect('btn_1',true);"><img src="like.png" width="100%" alt=""> <span id="done"></span></a>
+    <a class="btn" id="btn_2" onclick="collect('btn_2',false);"><img src="dislike.png" width="100%" alt=""><span id="undone"></span></a>
+  </div>
+</div>
+
+</div>
+
+<h2 id="xiangguan"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a href="" id="other_1"></a>
+    <a href="" id="other_2"></a>
+    <a href="" id="other_3"></a>
+    <a href="" id="other_4"></a>
+    <a href="" id="other_5"></a>
+  </div>
+</div>
+</div>
+
+<h2 id="feadback_title"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a id="feadback_btn"></a>
+  </div>
+</div>
+</div>
+</body>
+<script src="index.min.js"></script>
+<script>
+  var message_zh = {
+    title:"小米手机安全中心设置方法",
+    cont:"<p>对于部分使用小米机型的用户，可能遇到安全中心设置权限不正确，导致茄子快传无法正常收发的问题。<br><br>在小米安全中心中按下列步骤进行设置即可解决：</p><p>1.找到并打开小米安全中心</p><p>2.选择【授权管理】-〉【应用权限管理】</p><p>3.找到并打开茄子快传的授权界面，将【定位】及【开启wifi】设置为“允许”</p><br><p>注：茄子快传是一款安全方便的传输工具，不会借手机权限泄露用户隐私或者盗用流量，请在安装时给予茄子快传所需的默认权限或者在手机安全中心中对茄子快传进行授权。</p>",
+    other_1:"热点启动失败？",
+    other_1_id:"hc_startap",
+    other_2:"",
+    other_2_id:"",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+
+  };
+  var message_en = {
+    title:"Configuring Xiaomi Security Center",
+    cont:"<p>Some Xiaomi device users may have incorrect permission settings in the Security Center that will cause SHAREit to be unable to send or receive files normally. </p><br><p>To resolve this issue, follow the steps below</p><p>1. Find and open the Xiaomi Security Center</p><p>2. Select Permissions -'Permissions'</p><p>3. Find and open the permission interface for SHAREit, and then enable Get location info and Change Wi-Fi connectivity.</p><br><p>SHAREit is a safe and convenient transfer tool and we won't access to your privacy through enabled permissions. Please enable the default permissions of SHAREit when installing or make sure the authority of SHAREit in Security Center on your phone.</p>",
+    other_1:"Why can’t I activate hotspot",
+    other_1_id:"hc_startap",
+    other_2:"",
+    other_2_id:"",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+  };
+changeLang(message_zh,message_en);
+</script>
+</html>

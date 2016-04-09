@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/button" android:layout_width="@dimen/widge_number_botton_imageview" android:layout_height="@dimen/widge_number_botton_imageview" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/widge_number_botton_textview_textSize" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="end|center" android:id="@id/number" android:background="@drawable/widget_number_message_num" android:layout_width="@dimen/widge_number_botton_textview" android:layout_height="@dimen/widge_number_botton_textview" android:layout_marginTop="@dimen/widge_number_botton_textview_marginTop" android:layout_marginBottom="@dimen/widge_number_botton_textview_marginBottom" />
+</FrameLayout>

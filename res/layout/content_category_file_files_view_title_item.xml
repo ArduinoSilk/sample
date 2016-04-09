@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/common_subtitle_text_size" android:textColor="@drawable/content_category_file_font_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/catgory_file_title_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="@dimen/content_file_toparea_textview_padding" android:text="@string/common_content_file" android:layout_marginStart="14.0dip" android:layout_marginEnd="@dimen/content_file_toparea_textview_padding" />
+    <ImageView android:background="@drawable/content_category_file_folder_separator" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

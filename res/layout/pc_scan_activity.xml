@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:layout_gravity="center" android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.lenovo.anyshare.pc.qrcode.FinderSurfaceView android:layout_gravity="center" android:id="@id/viewfinder_surfaceview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.lenovo.anyshare.pc.qrcode.FinderLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lenovo.anyshare.pc.qrcode.FinderView android:layout_gravity="center" android:id="@id/viewfinder_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/pc_scan_view_finder_layout_text_size" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/scan_text1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pc_entry_guide_text1" />
+        <TextView android:textSize="@dimen/pc_scan_view_finder_layout_text_size" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/scan_text2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pc_scan_preview_qrcode" />
+        <TextView android:textSize="14.0sp" android:layout_gravity="bottom|center" android:id="@id/txtResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    </com.lenovo.anyshare.pc.qrcode.FinderLayout>
+</FrameLayout>

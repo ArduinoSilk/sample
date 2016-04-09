@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+  <title></title>
+  <link rel="stylesheet" href="index.min.css">
+</head>
+<body>
+<div id="box">
+<div class="content">
+  <h1 id="head"></h1>
+  <div class="hr"></div>
+  <div id="cont">
+    
+  </div>
+  <div id="btn">
+    <a class="btn" id="btn_1" onclick="collect('btn_1',true);"><img src="like.png" width="100%" alt=""> <span id="done"></span></a>
+    <a class="btn" id="btn_2" onclick="collect('btn_2',false);"><img src="dislike.png" width="100%" alt=""><span id="undone"></span></a>
+  </div>
+</div>
+
+</div>
+
+<h2 id="xiangguan"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a href="" id="other_1"></a>
+    <a href="" id="other_2"></a>
+    <a href="" id="other_3"></a>
+    <a href="" id="other_4"></a>
+    <a href="" id="other_5"></a>
+  </div>
+</div>
+</div>
+
+<h2 id="feadback_title"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a id="feadback_btn"></a>
+  </div>
+</div>
+</div>
+</body>
+<script src="index.min.js"></script>
+<script>
+  var message_zh = {
+    title:"热点启动失败？",
+    cont:"<p>1、部分机型可能存在兼容性问题，启动热点比较慢。这种情况需要接收方重新启动茄子，并点击【我要接收】重试。</p><br><p>2、如果茄子快传没有获得手机WIFI的使用权限也会导致类似问题，请参看：小米手机安全中心设置方法。</p><br><p>3、部分特殊机型如Nexus7和Mi pad不支持启动热点，此类情况可以请发送方点击我要接收，接收方点击我要发送，尝试连接。</p>",
+    other_1:"找不到周围的接收者？",
+    other_1_id:"hc_find",
+    other_2:"升级到Android 6.0（Marshmallow）系统后无法找到接收者？",
+    other_2_id:"hd_android6",
+    other_3:"小米手机安全中心设置方法",
+    other_3_id:"hd_misafe",
+    other_4:"Mi pad热点启动失败？",
+    other_4_id:"hd_mipad",
+    other_5:"Nexus7热点启动失败？",
+    other_5_id:"hd_nexus7"
+
+  };
+  var message_en = {
+    title:"Why can’t I activate hotspot?",
+    cont:"<p>Due to compatibility issues, it may take more time to activate hotspot on some devices. In these cases, restart SHAREit on the receiving device and the tap Receive to try again.</p><br><p>Additionally, this problem may also be due to SHAREit not having permissions for Wi-Fi connection on the device. Please see Configuring Xiaomi Security Center.</p><br><p>Some devices, such as Nexus7 and Mi pad, do not support hotspot connections. In these cases, tap 'Receive' on the sending device and 'Send' on the receiving device to try again.</p>",
+    other_1:"Why can’t I find receivers around me?",
+    other_1_id:"hc_find",
+    other_2:"Why can't I locate the receiving device after upgrading to Android M?",
+    other_2_id:"hd_android6",
+    other_3:"Configuring Xiaomi Security Center",
+    other_3_id:"hd_misafe",
+    other_4:"Failed to open hotspot on Mi Pad?",
+    other_4_id:"hd_mipad",
+    other_5:"Failed to open hotspot on Nexus7?",
+    other_5_id:"hd_nexus7"
+  };
+changeLang(message_zh,message_en);
+</script>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_container" android:background="@drawable/common_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/include_content_pagers" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/share_content_bottom_bar_height" layout="@layout/content_pagers" />
+    <ImageView android:layout_gravity="bottom" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="@dimen/share_content_bottom_bar_height" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/share_content_bottom_bar_height" android:baselineAligned="false">
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:enabled="false" android:textSize="@dimen/share_content_bottom_button_text_size" android:textColor="@color/common_text_color_blue" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_giftbox" android:background="@drawable/common_capsule_button_stroke_blue" android:paddingLeft="@dimen/share_content_bottom_button_padding_horizontal" android:paddingRight="@dimen/share_content_bottom_button_padding_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/share_content_bottom_button_height" android:minWidth="@dimen/share_content_bottom_button_min_width" android:text="@string/share_content_selected_button" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/share_content_bottom_button_text_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_next" android:background="@drawable/common_capsule_button_filled_blue" android:paddingLeft="@dimen/share_content_bottom_button_padding_horizontal" android:paddingRight="@dimen/share_content_bottom_button_padding_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/share_content_bottom_button_height" android:minWidth="@dimen/share_content_bottom_button_min_width" android:text="@string/common_operate_next" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

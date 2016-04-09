@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+  <title></title>
+  <link rel="stylesheet" href="index.min.css">
+</head>
+<body>
+<div id="box">
+<div class="content">
+  <h1 id="head"></h1>
+  <div class="hr"></div>
+  <div id="cont">
+    
+  </div>
+  <div id="btn">
+    <a class="btn" id="btn_1" onclick="collect('btn_1',true);"><img src="like.png" width="100%" alt=""> <span id="done"></span></a>
+    <a class="btn" id="btn_2" onclick="collect('btn_2',false);"><img src="dislike.png" width="100%" alt=""><span id="undone"></span></a>
+  </div>
+</div>
+
+</div>
+
+<h2 id="xiangguan"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a href="" id="other_1"></a>
+    <a href="" id="other_2"></a>
+    <a href="" id="other_3"></a>
+    <a href="" id="other_4"></a>
+    <a href="" id="other_5"></a>
+  </div>
+</div>
+</div>
+
+<h2 id="feadback_title"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a id="feadback_btn"></a>
+  </div>
+</div>
+</div>
+</body>
+<script src="index.min.js"></script>
+<script>
+  var message_zh = {
+    title:"如何将文件保存到SD卡？",
+    cont:"<p>茄子快传安装后默认将接收文件保存在手机内部存储的SHAREit目录下，您可以在设置菜单中找到的存储位置选项，将文件保存路径修改到外置存储卡。</p>",
+    other_1:"无法将文件保存到SD卡？",
+    other_1_id:"hs_savesd",
+    other_2:"找不到我接收的文件？",
+    other_2_id:"hs_find",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+
+  };
+  var message_en = {
+    title:"How to save files to my external SD card?",
+    cont:"<p>The default storage location is internal phone card. You can switch storage location to external SD card in SHAREit settings.</p>",
+    other_1:"Cannot save files in external SD card?",
+    other_1_id:"hs_savesd",
+    other_2:"Why I can't find files received?",
+    other_2_id:"hs_find",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+  };
+changeLang(message_zh,message_en);
+</script>
+</html>

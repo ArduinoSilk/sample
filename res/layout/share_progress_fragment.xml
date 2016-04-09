@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@id/progress_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/common_title_height">
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:background="@color/anyshare_common_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/share_content_bottom_bar_height">
+            <com.lenovo.anyshare.share.session.view.TransSummaryHeaderView android:id="@id/header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/share_progress_header_height" />
+            <com.lenovo.anyshare.widget.PinnedExpandableListView android:gravity="center" android:id="@id/listview" android:background="#fff6f9fa" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childDivider="#00000000" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:divider="@null" android:dividerHeight="@dimen/common_listview_divider_height" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="#ffffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/share_progress_bottom_height">
+            <include layout="@layout/common_horizontal_divider" />
+            <FrameLayout android:id="@id/btn_send" android:paddingTop="@dimen/share_progress_bottom_send_button_padding_vertical" android:paddingBottom="@dimen/share_progress_bottom_send_button_padding_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/share_progress_bottom_send_button_margin_hoarizontal" android:layout_marginRight="@dimen/share_progress_bottom_send_button_margin_hoarizontal" android:layout_marginStart="@dimen/share_progress_bottom_send_button_margin_hoarizontal" android:layout_marginEnd="@dimen/share_progress_bottom_send_button_margin_hoarizontal">
+                <TextView android:textSize="@dimen/share_progress_bottom_send_button_text_size" android:textColor="#ffffffff" android:gravity="center" android:background="@drawable/common_capsule_button_filled_blue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/share_content_continue_send" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/share_progress_bottom_tips_text_size" android:textColor="#ff07d381" android:gravity="end|center" android:layout_gravity="end|bottom|center" android:id="@id/tips" android:background="@drawable/share_session_tips_bg" android:paddingLeft="@dimen/share_progress_bottom_tips_padding_horizonal" android:paddingRight="@dimen/share_progress_bottom_tips_padding_horizonal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/share_progress_bottom_tips_height" android:layout_marginBottom="@dimen/share_progress_bottom_tips_margin_bottom" />
+    </FrameLayout>
+    <fragment android:name="com.lenovo.anyshare.share.user.UserFragment" android:layout_gravity="top" android:id="@id/user" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content_view" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/common_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:layout_width="@dimen/common_progressbar_width" android:layout_height="@dimen/common_progressbar_height" android:indeterminateDrawable="@drawable/common_progressbar_rotate_orange_bg" />
+    <include layout="@layout/common_view_title_bar" />
+    <FrameLayout android:id="@id/animation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

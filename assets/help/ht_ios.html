@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+  <title></title>
+  <link rel="stylesheet" href="index.min.css">
+</head>
+<body>
+<div id="box">
+<div class="content">
+  <h1 id="head"></h1>
+  <div class="hr"></div>
+  <div id="cont"></div>
+  <div id="btn">
+    <a class="btn" id="btn_1" onclick="collect('btn_1',true);"><img src="like.png" width="100%" alt=""> <span id="done"></span></a>
+    <a class="btn" id="btn_2" onclick="collect('btn_2',false);"><img src="dislike.png" width="100%" alt=""><span id="undone"></span></a>
+  </div>
+</div>
+</div>
+<h2 id="xiangguan"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a href="" id="other_1"></a>
+    <a href="" id="other_2"></a>
+    <a href="" id="other_3"></a>
+    <a href="" id="other_4"></a>
+    <a href="" id="other_5"></a>
+  </div>
+</div>
+</div>
+<h2 id="feadback_title"></h2>
+<div id="box">
+  <div class="content">
+  <div id="other">
+    <a id="feadback_btn"></a>
+  </div>
+</div>
+</div>
+</body>
+<script src="index.min.js"></script>
+<script>
+  var message_zh = {
+    title:"安卓手机和苹果手机如何互传文件?",
+    cont:"<p><b>方式一:android设备创建并向苹果手机分享热点。</b></p><p>1、Android手机选择[我要发送]并完成选择文件，在寻找接收者界面选择【连接iOS/WP】按钮；</p><p>2. 软件默认采用分享热点方式，自动关闭当前的无线连接并启动手机热点，这个方式的优点使连接后传输速度最快；</p><p>3. 启动成功后，软件会显示连接示意，请苹果手机按步骤连接。</p><p>当Android手机选择【我要接收】时，软件会自动启用热点，此时请苹果手机直接按提示步骤连接即可。</p><br><p><b>方式二:Android手机与苹果手机在同一个WIFI网络内。</b></p><p>如果Android手机和苹果手机在一个局域网内，又不希望用热点分享的方式连接苹果手机，可以在茄子设置中选择【传输时优先局域网】模式。</p><p>这个方式的优点是当收发双方传输时无需中断网络，连接最方便。</p><p>设置好后下次使用【连接iOS/WP】功能就不会启用手机热点了。</p><br><p>注：Android手机与WindowsPhone手机连接方式与此相同。</p>",
+    other_1:"Android手机如何与电脑传输文件？",
+    other_1_id:"ht_pc",
+    other_2:"",
+    other_2_id:"",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:""
+  };
+  var message_en = {
+    title:"How to transfer files between Android and iOS devices?",
+    cont:"<p><b>Method 1. Set up a Wi-Fi hotspot on Android devices and connect iOS devices to this hotspot.</b></p> <p>1. Tap 'Send' on Android devices, and select the file(s) you want to send. Next, find 'Connect to iOS/WP' in Select Receiver page and tap it. </p><p>2. The default connection mode is hotspot. It will automatically close the current Wi-Fi connection and set up a hotspot on the phone, for it's the fastest transfer way when connected.</p><p>3. Once the hotspot is activated, there will be instructions for connection. Follow these instructions on iOS devices.</p> <p>If you select 'Receive' on Android devices, SHAREit will activate hotspot automatically. Follow the displayed instructions to connect on iOS devices.</p><br><p><b>Method 2. When Android and iOS devices are in the same Wi-Fi network.</b></p><p>If the Android and iOS devices are connected to the same Wi-Fi, and you do not want to use hotspot connection, then you can go to Settings in SHAREit and select 'Prefer Wi-Fi Mode'.</p><p>The advantage of this method is that the Wi-Fi connections on both devices will not be interrupted, which is the most convenient way of transferring files.</p><p>Once set up, hotspot will not be activated the next time you tap on 'Connect to iOS/WP' .</p><br><p>Tip These two methods apply for the connection between Andriod and WindowsPhone devices as well.</p>",
+    other_1:"How to transfer files between Android devices and PC?",
+    other_1_id:"ht_pc",
+    other_2:"",
+    other_2_id:"",
+    other_3:"",
+    other_3_id:"",
+    other_4:"",
+    other_4_id:"",
+    other_5:"",
+    other_5_id:"",
+  };
+changeLang(message_zh,message_en);
+</script>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="share_content_category_file_item_text">
+        <item quantity="other">Liczba pozycji: %1$d</item>
+        <item quantity="zero">Liczba pozycji: %1$d</item>
+        <item quantity="one">Liczba pozycji: %1$d</item>
+    </plurals>
+    <plurals name="share_session_trans_detail">
+        <item quantity="other">%1$d files, total %2$s</item>
+        <item quantity="zero">%1$d file, total %2$s</item>
+        <item quantity="one">%1$d file, total %2$s</item>
+    </plurals>
+    <plurals name="share_session_menu_fragment_title">
+        <item quantity="other">Liczba plików %2$s: %1$d</item>
+        <item quantity="zero">%1$d plików %2$s</item>
+        <item quantity="one">%1$d plik %2$s</item>
+    </plurals>
+    <plurals name="share_finish_files_count_unit">
+        <item quantity="other">pliki/plików</item>
+        <item quantity="zero">plików</item>
+        <item quantity="one">plik</item>
+    </plurals>
+</resources>

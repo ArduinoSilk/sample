@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/widget_pulllist_footer_height">
+        <ImageView android:layout_gravity="center" android:id="@id/listview_foot_end_left" android:background="#ffcccccc" android:visibility="gone" android:layout_width="@dimen/widget_pulllist_footer_line_width" android:layout_height="1.0px" android:layout_marginRight="@dimen/widget_pulllist_footer_line_marginright" android:layout_marginEnd="@dimen/widget_pulllist_footer_line_marginright" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/listview_foot_progress" android:visibility="gone" android:layout_width="@dimen/widget_pulllist_footer_progress_width" android:layout_height="@dimen/widget_pulllist_footer_progress_width" android:layout_marginRight="@dimen/widget_pulllist_footer_progress_marginright" android:indeterminateDrawable="@drawable/common_loading_small_white" android:layout_marginEnd="@dimen/widget_pulllist_footer_progress_marginright" />
+        <TextView android:textSize="@dimen/widget_pulllist_footer_info_size" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/listview_foot_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center" android:id="@id/listview_foot_end_right" android:background="#ffcccccc" android:visibility="gone" android:layout_width="@dimen/widget_pulllist_footer_line_width" android:layout_height="1.0px" android:layout_marginLeft="@dimen/widget_pulllist_footer_line_marginright" android:layout_marginStart="@dimen/widget_pulllist_footer_line_marginright" />
+    </LinearLayout>
+</LinearLayout>

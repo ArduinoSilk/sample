@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/language" android:layout_width="fill_parent" android:layout_height="@dimen/setting_language_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/setting_language_item_name_size" android:textColor="@color/setting_language_text_color" android:gravity="start" android:id="@id/language_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_language_item_mariginLeft" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:id="@id/language_check" android:layout_width="@dimen/setting_language_item_checkheight" android:layout_height="@dimen/setting_language_item_checkheight" android:layout_marginRight="@dimen/setting_language_item_check_mariginRight" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:background="@color/anyshare_common_background_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/setting_language_item_mariginLeft" android:layout_alignParentBottom="true" />
+</RelativeLayout>

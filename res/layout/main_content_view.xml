@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    <com.lenovo.anyshare.main.content.ActionBarView android:id="@id/actionbar_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/mask_title_bar" android:paddingBottom="@dimen/main_actionbar_mask_title_padding_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/main_actionbar_height">
+        <Button android:layout_gravity="start|center" android:id="@id/return_view" android:background="@drawable/common_titlebar_return_bg" android:layout_width="@dimen/common_titlebar_return_width" android:layout_height="@dimen/common_title_height" android:layout_marginLeft="@dimen/common_titlebar_return_marginLeft" android:layout_marginStart="@dimen/common_titlebar_return_marginLeft" />
+        <TextView android:textSize="@dimen/common_titlebar_title_textSize" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_titlebar_title_marginLeft" android:layout_marginRight="@dimen/common_titlebar_title_marginRight" android:text="@string/app_name" android:singleLine="true" android:layout_marginStart="@dimen/common_titlebar_title_marginLeft" android:layout_marginEnd="@dimen/common_titlebar_title_marginRight" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/arrowView" android:background="@drawable/main_guide_arrow_bg" android:visibility="gone" android:layout_width="@dimen/main_content_guide_icon_main_arrowView_width" android:layout_height="@dimen/main_content_guide_icon_main_arrowView_height">
+        <ImageView android:layout_gravity="center" android:id="@id/main_arrow" android:layout_width="@dimen/main_content_guide_icon_main_width" android:layout_height="@dimen/main_content_guide_icon_main_height" android:src="@drawable/arrow" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center|top" android:id="@id/result_arrow" android:visibility="gone" android:layout_width="@dimen/main_content_guide_icon_width" android:layout_height="@dimen/main_content_guide_icon_height" android:layout_marginTop="@dimen/main_content_guide_result_arrow_margin_top" android:src="@drawable/main_result_arrow" android:scaleType="centerCrop" />
+</FrameLayout>

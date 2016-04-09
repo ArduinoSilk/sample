@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/pc_content_list_child_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/refreshable_list_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pc_refreshable_list_view_padding_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/pc_refreshable_list_view_padding_left" android:layout_alignParentStart="true">
+            <ImageView android:layout_gravity="center" android:id="@id/refreshable_list_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pc_refreshable_arrow" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/refreshable_list_progress" android:visibility="gone" android:layout_width="@dimen/pc_refreshable_list_view_progress_size" android:layout_height="@dimen/pc_refreshable_list_view_progress_size" android:indeterminateDrawable="@drawable/common_progressbar_rotate_orange_bg" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/common_title_text_size" android:textColor="#ff000000" android:id="@id/refreshable_list_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pc_refreshable_list_view_padding_left" android:text="@string/pc_remote_view_pull_refresh" android:layout_centerInParent="true" android:layout_marginStart="@dimen/pc_refreshable_list_view_padding_left" />
+    </RelativeLayout>
+</LinearLayout>

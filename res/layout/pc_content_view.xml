@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/pc_content_view" android:background="@drawable/common_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/pc_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="#00000000" android:divider="#ffcecfce" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="bottom|center" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="#fff2f3f5" android:paddingLeft="@dimen/pc_content_bottom_layout_margin_horizontal" android:paddingRight="@dimen/pc_content_bottom_layout_margin_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/pc_content_bottom_button_height">
+        <LinearLayout android:id="@id/pc_send_photo" style="@style/PCStyle.FRItem">
+            <ImageView android:id="@id/icon" android:src="@drawable/pc_icon_photo" style="@style/PCStyle.FRItemIcon" />
+            <TextView android:text="@string/pc_content_photos" style="@style/PCStyle.FRItemName" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/pc_send_file" style="@style/PCStyle.FRItem">
+            <ImageView android:id="@id/icon" android:src="@drawable/pc_icon_file" style="@style/PCStyle.FRItemIcon" />
+            <TextView android:text="@string/pc_content_files" style="@style/PCStyle.FRItemName" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/pc_send_ppt_control" style="@style/PCStyle.FRItem">
+            <ImageView android:id="@id/icon" android:src="@drawable/pc_icon_ppt" style="@style/PCStyle.FRItemIcon" />
+            <TextView android:text="@string/pc_ppt_control" style="@style/PCStyle.FRItemName" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/pc_send_remote_view" style="@style/PCStyle.FRItem">
+            <ImageView android:id="@id/icon" android:src="@drawable/pc_icon_remoteview" style="@style/PCStyle.FRItemIcon" />
+            <TextView android:text="@string/pc_remote_view" style="@style/PCStyle.FRItemName" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="#fff2f3f5" android:paddingLeft="@dimen/pc_content_bottom_layout_margin_horizontal" android:paddingRight="@dimen/pc_content_bottom_layout_margin_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/pc_content_bottom_button_height">
+        <LinearLayout android:id="@id/pc_send_play_to" style="@style/PCStyle.FRItem">
+            <ImageView android:id="@id/icon" android:src="@drawable/pc_icon_playto" style="@style/PCStyle.FRItemIcon" />
+            <TextView android:text="@string/pc_playto" style="@style/PCStyle.FRItemName" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/pc_send_backup" style="@style/PCStyle.FRItem">
+            <ImageView android:id="@id/icon" android:src="@drawable/pc_icon_backup" style="@style/PCStyle.FRItemIcon" />
+            <TextView android:text="@string/pc_backup" style="@style/PCStyle.FRItemName" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/pc_send_camera" android:visibility="invisible" style="@style/PCStyle.FRItem">
+            <ImageView android:id="@id/icon" style="@style/PCStyle.FRItemIcon" />
+            <TextView android:text="camera" style="@style/PCStyle.FRItemName" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/pc_send_text" android:visibility="invisible" style="@style/PCStyle.FRItem">
+            <ImageView android:id="@id/icon" style="@style/PCStyle.FRItemIcon" />
+            <TextView android:text="text" style="@style/PCStyle.FRItemName" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

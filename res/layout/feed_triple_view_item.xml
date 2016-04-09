@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/feed_common_item_bg" android:paddingTop="@dimen/feed_triple_item_margin_top" android:paddingBottom="@dimen/feed_triple_item_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/feed_list_icon_size" android:layout_height="@dimen/feed_list_icon_size" android:layout_marginBottom="@dimen/feed_common_content_margin_bottom" android:scaleType="fitCenter" />
+    <TextView android:textSize="@dimen/feed_common_medium_text_size" android:textColor="@color/feed_common_large_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/feed_triple_item_text_max_width" android:singleLine="true" />
+    <TextView android:textSize="@dimen/feed_common_small_text_size" android:textColor="@color/feed_common_small_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/people_trans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_list_people_trans_margin_top" android:maxWidth="@dimen/feed_triple_item_text_max_width" android:singleLine="true" />
+</LinearLayout>

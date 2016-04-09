@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/socialshare_dialog_gridview_item_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_horizontal" android:id="@id/icon" android:layout_width="@dimen/socialshare_dialog_gridview_item_icon_size" android:layout_height="@dimen/socialshare_dialog_gridview_item_icon_size" android:layout_marginBottom="@dimen/socialshare_dialog_gridview_item_icon_margin_bottom" />
+    <TextView android:textSize="@dimen/socialshare_dialog_gridview_item_text_size" android:textColor="#ff484848" android:gravity="center" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

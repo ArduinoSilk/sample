@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:background="@color/share_discover_pop_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/share_discover_popup_show_ap_password_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end|center|top" android:id="@id/share_discover_pipup_show_ap_password_cancel_button" android:padding="@dimen/share_discover_popup_show_ap_password_cancel_icon_padding" android:layout_width="@dimen/share_discover_popup_show_ap_password_cancel_icon_size" android:layout_height="@dimen/share_discover_popup_show_ap_password_cancel_icon_size" android:src="@drawable/common_operation_cancel_icon" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/share_progress_trans_help_text_margin_horizontal" android:layout_marginTop="@dimen/share_discover_popup_show_ap_password_text_margin_top" android:layout_marginRight="@dimen/share_progress_trans_help_text_margin_horizontal" android:layout_marginStart="@dimen/share_progress_trans_help_text_margin_horizontal" android:layout_marginEnd="@dimen/share_progress_trans_help_text_margin_horizontal">
+        <TextView android:textSize="@dimen/common_title_text_size_large" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/share_discover_popup_show_ap_password_text_margin_bottom" android:text="@string/share_trans_speed_slow_prompt" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/share_progress_trans_help_phone_pic_width" android:layout_height="@dimen/share_progress_trans_help_phone_pic_height" android:src="@drawable/share_progress_trans_help_tips_pic_left" />
+            <ImageView android:layout_width="@dimen/share_progress_trans_help_phone_pic_width" android:layout_height="@dimen/share_progress_trans_help_phone_pic_height" android:src="@drawable/share_progress_trans_help_tips_pic_right" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

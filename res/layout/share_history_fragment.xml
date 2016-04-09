@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/anyshare_content_album_title_bg_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lenovo.anyshare.widget.PinnedExpandableListView android:gravity="center" android:id="@id/interactive_list" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childDivider="#00000000" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:divider="@null" android:dividerHeight="@dimen/common_listview_divider_height" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/no_history" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:background="@drawable/share_history_empty" android:layout_width="@dimen/history_help_icon_width" android:layout_height="@dimen/history_help_icon_height" android:layout_marginBottom="@dimen/history_help_icon_marginbottom" />
+        <TextView android:textSize="@dimen/history_help_info_title_size" android:textColor="#ff666666" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/history_help_info_padding" android:layout_marginRight="@dimen/history_help_info_padding" android:layout_marginBottom="@dimen/history_help_info_title_marginbottom" android:text="@string/share_history_no_items" android:layout_marginStart="@dimen/history_help_info_padding" android:layout_marginEnd="@dimen/history_help_info_padding" />
+    </LinearLayout>
+    <include android:id="@id/progress" layout="@layout/history_loading_progress_grey" />
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#fff6f9fa" android:layout_width="fill_parent" android:layout_height="@dimen/content_item_right_icon_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/music_list_info" android:background="@drawable/content_album_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/content_item_right_icon_height">
+        <FrameLayout android:layout_gravity="start|center" android:layout_width="@dimen/content_item_thumbnail_layout_size" android:layout_height="@dimen/content_item_thumbnail_layout_size" android:layout_marginLeft="@dimen/common_list_padding_left" android:layout_marginRight="@dimen/content_ablum_item_icon_margin_right" android:layout_marginStart="@dimen/common_list_padding_left" android:layout_marginEnd="@dimen/content_ablum_item_icon_margin_right">
+            <ImageView android:layout_gravity="center" android:id="@id/grid_item_img" android:background="@drawable/common_music_default_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <LinearLayout android:gravity="start|center" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/content_ablum_item_text_margin_right" android:layout_marginRight="@dimen/content_ablum_item_text_margin_right" android:layout_weight="1.0" android:layout_marginStart="@dimen/content_ablum_item_text_margin_right" android:layout_marginEnd="@dimen/content_ablum_item_text_margin_right">
+            <TextView android:textSize="@dimen/common_title_text_size" android:textColor="#ff444444" android:id="@id/grid_music_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/common_subtitle_text_size" android:textColor="#ff757575" android:gravity="start" android:layout_gravity="start|center" android:id="@id/grid_music_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/content_music_list_item_info_margin_right" android:singleLine="true" android:layout_marginEnd="@dimen/content_music_list_item_info_margin_right" />
+                <TextView android:textSize="@dimen/common_subtitle_text_size" android:textColor="#ff757575" android:gravity="start" android:layout_gravity="start|center" android:id="@id/grid_music_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|center" android:id="@id/grid_item_check" android:layout_width="@dimen/content_item_check_size" android:layout_height="@dimen/content_item_check_size" android:layout_marginRight="@dimen/content_ablum_item_checkbox_margin_right" android:src="@drawable/common_check_on" android:layout_marginEnd="@dimen/content_ablum_item_checkbox_margin_right" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@id/bottom_line" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginLeft="@dimen/content_group_list_item_bottom_line_margin_left" android:layout_marginStart="@dimen/content_group_list_item_bottom_line_margin_left" />
+</FrameLayout>

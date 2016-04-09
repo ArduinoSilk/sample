@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center|top" android:layout_width="@dimen/history_help_icon_width" android:layout_height="@dimen/history_help_icon_height" android:layout_marginBottom="@dimen/history_help_icon_marginbottom" android:indeterminateDrawable="@drawable/common_loading_grey" />
+    <TextView android:textSize="@dimen/history_help_info_title_size" android:textColor="#ff666666" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/history_help_info_padding" android:layout_marginRight="@dimen/history_help_info_padding" android:layout_marginBottom="@dimen/history_help_info_title_marginbottom" android:text="@string/common_tip_network_connecting" android:layout_marginStart="@dimen/history_help_info_padding" android:layout_marginEnd="@dimen/history_help_info_padding" />
+</LinearLayout>

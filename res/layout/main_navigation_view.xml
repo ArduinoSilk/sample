@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/contentview" android:background="@color/main_header_navigation_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header_view" android:layout_width="fill_parent" android:layout_height="@dimen/main_navigation_header_height" android:layout_alignParentTop="true" layout="@layout/main_navigation_header_view" />
+    <ScrollView android:background="@color/main_navigation_background_color" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom" android:layout_below="@id/header_view">
+        <LinearLayout android:layout_gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_navigation_header_bottom">
+            <LinearLayout android:id="@id/pc" style="@style/NavigationStyle.ListItem">
+                <ImageView android:background="@drawable/main_navigation_pc" style="@style/NavigationStyle.ListItemIcon" />
+                <TextView android:text="@string/pc_connect_name" style="@style/NavigationStyle.ListItemText" />
+                <ImageView android:id="@id/pc_tip" style="@style/NavigationStyle.ListItemTipIcon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/webshare" style="@style/NavigationStyle.ListItem">
+                <ImageView android:background="@drawable/main_navigation_webshare" style="@style/NavigationStyle.ListItemIcon" />
+                <TextView android:text="@string/webshare_name" style="@style/NavigationStyle.ListItemText" />
+                <ImageView android:id="@id/webshare_tip" style="@style/NavigationStyle.ListItemTipIcon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/clean" style="@style/NavigationStyle.ListItem">
+                <ImageView android:background="@drawable/main_navigation_clean" style="@style/NavigationStyle.ListItemIcon" />
+                <TextView android:text="@string/navigation_clean_name" style="@style/NavigationStyle.ListItemText" />
+                <ImageView android:id="@id/clean_tip" style="@style/NavigationStyle.ListItemTipIcon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/lockit" style="@style/NavigationStyle.ListItem">
+                <ImageView android:background="@drawable/main_navigation_lockit" style="@style/NavigationStyle.ListItemIcon" />
+                <TextView android:text="@string/lockit_enter_title" style="@style/NavigationStyle.ListItemText" />
+                <ImageView android:id="@id/lockit_tip" style="@style/NavigationStyle.ListItemTipIcon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/cloneit" style="@style/NavigationStyle.ListItem">
+                <ImageView android:background="@drawable/main_navigation_cloneit" style="@style/NavigationStyle.ListItemIcon" />
+                <TextView android:text="@string/navigation_clone_name" style="@style/NavigationStyle.ListItemText" />
+                <ImageView android:id="@id/cloneit_tip" style="@style/NavigationStyle.ListItemTipIcon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/invite" style="@style/NavigationStyle.ListItem">
+                <ImageView android:background="@drawable/main_navigation_invite" style="@style/NavigationStyle.ListItemIcon" />
+                <TextView android:text="@string/navigation_invite_name" style="@style/NavigationStyle.ListItemText" />
+                <ImageView android:id="@id/invite_tip" style="@style/NavigationStyle.ListItemTipIcon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/rateus" style="@style/NavigationStyle.ListItem">
+                <ImageView android:background="@drawable/main_navigation_rateus" style="@style/NavigationStyle.ListItemIcon" />
+                <TextView android:text="@string/navigation_rateus_name" style="@style/NavigationStyle.ListItemText" />
+                <ImageView android:id="@id/rateus_tip" style="@style/NavigationStyle.ListItemTipIcon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/feedback" android:layout_marginBottom="@dimen/main_navigation_list_bottom" style="@style/NavigationStyle.ListItem">
+                <ImageView android:background="@drawable/main_navigation_feedback" style="@style/NavigationStyle.ListItemIcon" />
+                <TextView android:text="@string/navigation_feedback_name" style="@style/NavigationStyle.ListItemText" />
+                <ImageView android:id="@id/feedback_tip" style="@style/NavigationStyle.ListItemTipIcon" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_gravity="start" android:background="@color/main_navigation_drivider_bottom_color" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip" android:layout_above="@id/bottom" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" style="@style/NavigationStyle.ListItemDrivider" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom" android:background="@color/main_navigation_background_color" android:paddingLeft="@dimen/main_navigation_bottom_padding" android:paddingRight="@dimen/main_navigation_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/settings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/settingsIcon" android:background="@drawable/main_navigation_setting_bg" style="@style/NavigationStyle.ListItemIntroIcon" />
+            <TextView android:text="@string/setting_name" android:layout_toRightOf="@id/settingsIcon" android:layout_toEndOf="@id/settingsIcon" style="@style/NavigationStyle.ListItemIntroText" />
+            <ImageView android:id="@id/settings_tip" android:layout_marginTop="@dimen/main_navigation_listitemintrotipicon_margin_top" style="@style/NavigationStyle.ListItemIntroTipIcon" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/about" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/aboutIcon" android:background="@drawable/main_navigation_about_bg" style="@style/NavigationStyle.ListItemIntroIcon" />
+            <TextView android:text="@string/about_name" android:layout_toRightOf="@id/aboutIcon" android:layout_toEndOf="@id/aboutIcon" style="@style/NavigationStyle.ListItemIntroText" />
+            <ImageView android:id="@id/about_tip" android:layout_marginTop="@dimen/main_navigation_listitemintrotipicon_margin_top" style="@style/NavigationStyle.ListItemIntroTipIcon" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

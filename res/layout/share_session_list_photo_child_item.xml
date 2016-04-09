@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:paddingLeft="@dimen/common_card_photo_default_padding" android:paddingRight="@dimen/common_card_photo_default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/child_item_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <com.lenovo.anyshare.widget.MaskProgressBar android:layout_gravity="center" android:id="@id/child_item_progress" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/child_item_error" android:background="@drawable/share_session_user_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/share_session_list_photo_child_item_error_margin_right" android:layout_marginBottom="@dimen/share_session_list_photo_child_item_error_margin_bottom" android:scaleType="centerCrop" android:layout_marginEnd="@dimen/share_session_list_photo_child_item_error_margin_right" />
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_container" android:background="@drawable/common_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/include_content_pagers" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/content_pagers_margin_bottom" layout="@layout/content_pagers" />
+    <ImageView android:layout_gravity="bottom" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="@dimen/content_pagers_margin_bottom" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/content_pagers_margin_bottom" android:baselineAligned="false">
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:enabled="false" android:textColor="@color/common_text_color_blue" android:id="@id/selected" android:background="@drawable/common_capsule_button_stroke_blue" android:text="@string/share_content_selected_button" style="@style/ContentBottomButtonStyle" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textColor="@android:color/white" android:id="@id/ok" android:background="@drawable/common_capsule_button_filled_blue" android:text="@string/common_operate_next" style="@style/ContentBottomButtonStyle" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

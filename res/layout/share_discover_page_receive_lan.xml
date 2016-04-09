@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/share_discover_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/hint_area" layout="@layout/share_discover_page_hint_area" />
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/switch_area" android:paddingLeft="@dimen/share_discover_page_switch_area_margin_horizonal" android:paddingRight="@dimen/share_discover_page_switch_area_margin_horizonal" android:paddingBottom="@dimen/share_discover_page_switch_area_margin_horizonal" android:layout_width="fill_parent" android:layout_height="@dimen/share_discover_page_switch_area_height" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/common_text_size_normal" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/btn_switch_toast" android:paddingBottom="@dimen/share_discover_top_view_switch_lan_paddingbottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/share_discover_top_view_button_height" android:text="@string/share_discover_compatible_switch_toast" />
+        <TextView android:textSize="@dimen/common_text_size_normal" android:textColor="@color/common_text_color_white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/btn_switch_hotspot" android:background="@drawable/common_capsule_button_stroke_white" android:layout_width="fill_parent" android:layout_height="@dimen/share_discover_top_view_button_height" android:minWidth="@dimen/share_discover_top_view_button_min_width" android:text="@string/share_discover_compatible_switch_to_hotspot" android:singleLine="true" />
+    </LinearLayout>
+    <FrameLayout android:gravity="center" android:id="@id/scan_area" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/switch_area" android:layout_below="@id/hint_area">
+        <com.lenovo.anyshare.share.discover.widget.WaveRadarSurfaceView android:layout_gravity="center" android:id="@id/wave_radar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/share_discover_page_center_device" />
+        <include layout="@layout/share_discover_page_retry_view" />
+    </FrameLayout>
+</RelativeLayout>

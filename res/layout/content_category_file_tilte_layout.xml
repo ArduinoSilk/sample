@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lenovo.anyshare.content.categoryfile.CategoryFileTitleLayout android:orientation="horizontal" android:background="@drawable/content_underline_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="center_vertical" android:id="@id/anyshare_content_category_file_files_view_title_root" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/content_category_file_files_view_title_item" />
+    <HorizontalScrollView android:layout_gravity="center_vertical" android:id="@id/anyshare_content_category_file_title_scroll_layout" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/anyshare_content_category_file_title_linearlayout" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </HorizontalScrollView>
+</com.lenovo.anyshare.content.categoryfile.CategoryFileTitleLayout>

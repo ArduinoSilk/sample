@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingTop="@dimen/feed_achievement_summary_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/feed_achievement_summary_icon_size" android:layout_height="@dimen/feed_achievement_summary_icon_size" android:layout_marginBottom="@dimen/feed_achievement_summary_icon_margin_bottom" android:scaleType="fitCenter" />
+    <TextView android:textSize="@dimen/feed_common_medium_text_size" android:textColor="@color/feed_common_large_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="@dimen/feed_common_very_small_text_size" android:textColor="@color/feed_common_small_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_achievement_summary_description_margin_top" android:singleLine="true" />
+</LinearLayout>

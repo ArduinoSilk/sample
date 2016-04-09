@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/retry_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/retry_btn" android:layout_width="@dimen/share_discover_retry_png_width" android:layout_height="@dimen/share_discover_retry_png_width" android:src="@drawable/share_discover_retry_layer" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/share_discover_scan_nick_name_text_size" android:textColor="#ffffffff" android:id="@id/retry_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/share_discover_scan_nick_name_margin_top" android:layout_below="@id/retry_btn" android:layout_centerHorizontal="true" />
+</RelativeLayout>

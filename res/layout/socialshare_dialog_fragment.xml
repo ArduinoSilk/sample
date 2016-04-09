@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/mask" android:background="@color/anyshare_common_mask_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/content" android:background="@drawable/anyshare_dialog_common_bg" android:layout_width="@dimen/socialshare_dialog_width" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/socialshare_title_text_size" android:textColor="#ff191919" android:gravity="center" android:layout_gravity="center" android:paddingTop="@dimen/socialshare_title_paddingtop" android:paddingBottom="@dimen/socialshare_title_paddingbottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_operate_share" />
+        <include layout="@layout/common_horizontal_divider" />
+        <LinearLayout android:layout_gravity="center" android:paddingBottom="@dimen/socialshaer_dialog_content_paddingbottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/socialshare_content_margin_top">
+            <GridView android:gravity="center_horizontal" android:id="@id/gridview" android:paddingLeft="@dimen/socialshare_dialog_content_padding_horizontal" android:paddingRight="@dimen/socialshare_dialog_content_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:verticalSpacing="@dimen/socialshare_content_gridview_vertical_spacing" android:numColumns="3" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

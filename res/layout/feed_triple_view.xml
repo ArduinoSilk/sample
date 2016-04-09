@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/root" android:background="@drawable/feed_common_card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/feed_common_titlebar" />
+        <include layout="@layout/feed_common_message" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_triple_item_margin_start" android:layout_marginTop="@dimen/feed_triple_content_margin_bottom" android:layout_marginRight="@dimen/feed_triple_item_margin_end" android:layout_marginBottom="@dimen/feed_triple_content_margin_top" android:baselineAligned="false" android:layout_marginStart="@dimen/feed_triple_item_margin_start" android:layout_marginEnd="@dimen/feed_triple_item_margin_end">
+            <include android:id="@id/triple_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/feed_triple_view_item" />
+            <include android:id="@id/triple_middle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/feed_triple_view_item" />
+            <include android:id="@id/triple_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/feed_triple_view_item" />
+        </LinearLayout>
+        <include layout="@layout/feed_common_button" />
+        <include layout="@layout/feed_common_bottom_divider" />
+    </LinearLayout>
+</FrameLayout>

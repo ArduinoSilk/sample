@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/received_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/content_category_file_grid_item_imageview_size" android:layout_height="@dimen/content_category_file_grid_item_imageview_size" android:layout_marginTop="@dimen/history_files_item_margin_top" />
+    <TextView android:textSize="@dimen/common_title_text_size" android:textColor="@color/item_title_text_color" android:layout_gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_category_file_grid_item_imageview_margin_top" android:layout_marginBottom="@dimen/content_category_file_grid_item_imageview_margin_bottom" />
+    <TextView android:textSize="@dimen/common_subtitle_text_size" android:textColor="@color/item_subtitle_text_color" android:layout_gravity="center" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_tip_loading" />
+</LinearLayout>

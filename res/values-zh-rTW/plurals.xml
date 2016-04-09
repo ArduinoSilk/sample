@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="personal_pager_login_info">
+        <item quantity="other">可獲得%1$s積分，%2$s枚勳章</item>
+    </plurals>
+    <plurals name="share_content_category_file_item_text">
+        <item quantity="other">%d項</item>
+    </plurals>
+    <plurals name="share_session_trans_detail">
+        <item quantity="other">%1$d個文件，共%2$s</item>
+        <item quantity="one">%1$d個文件，共%2$s</item>
+    </plurals>
+    <plurals name="share_session_menu_fragment_title">
+        <item quantity="other">%1$d 文件 %2$s</item>
+        <item quantity="zero">%1$d 文件 %2$s</item>
+        <item quantity="one">%1$d 文件 %2$s</item>
+    </plurals>
+    <plurals name="share_finish_files_count_unit">
+        <item quantity="other">文件</item>
+        <item quantity="zero">文件</item>
+        <item quantity="one">文件</item>
+    </plurals>
+</resources>

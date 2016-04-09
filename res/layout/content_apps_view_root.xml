@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/apps_fragment" android:background="#fff6f9fa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/app_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lenovo.anyshare.widget.PinnedExpandableListView android:gravity="center" android:id="@id/system_app_view" android:background="#fff6f9fa" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childDivider="#00000000" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:divider="@null" android:dividerHeight="@dimen/common_listview_divider_height" />
+        <com.lenovo.anyshare.widget.PinnedExpandableListView android:gravity="center" android:id="@id/sdcard_app_view" android:background="#fff6f9fa" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" android:childDivider="#00000000" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:divider="@null" android:dividerHeight="@dimen/common_listview_divider_height" />
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress" android:layout_width="@dimen/content_progress_item_size" android:layout_height="@dimen/content_progress_item_size" android:indeterminateDrawable="@drawable/common_progressbar_rotate_orange_bg" />
+    <TextView android:textSize="@dimen/content_progress_info_text_size" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_buttons_margin_horizontal" android:layout_marginRight="@dimen/content_buttons_margin_horizontal" android:layout_marginBottom="@dimen/content_buttons_margin_bottom" android:layout_marginStart="@dimen/content_buttons_margin_horizontal" android:layout_marginEnd="@dimen/content_buttons_margin_horizontal">
+        <LinearLayout android:id="@id/system_app_layout" android:background="@drawable/content_bottom_tab_left_btn" style="@style/ContentBottomTypeButtonStyle">
+            <ImageView android:layout_gravity="center" android:background="@drawable/content_bottom_app_install" android:layout_width="@dimen/content_bottom_tab_image_width" android:layout_height="@dimen/content_bottom_tab_image_height" />
+            <TextView android:textSize="@dimen/content_bottom_type_button_text_size" android:textColor="@color/common_selected_btn_text_color" android:id="@id/system_app_button" android:background="#00000000" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_bottom_button_padding" android:layout_marginStart="@dimen/content_bottom_button_padding" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/sdcard_app_layout" android:background="@drawable/content_bottom_tab_right_btn" style="@style/ContentBottomTypeButtonStyle">
+            <ImageView android:layout_gravity="center" android:background="@drawable/content_bottom_app_un_install" android:layout_width="@dimen/content_bottom_tab_image_width" android:layout_height="@dimen/content_bottom_tab_image_height" />
+            <TextView android:textSize="@dimen/content_bottom_type_button_text_size" android:textColor="@color/common_selected_btn_text_color" android:id="@id/sdcard_app_button" android:background="#00000000" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_bottom_button_padding" android:layout_marginStart="@dimen/content_bottom_button_padding" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

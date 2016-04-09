@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/anyshare_util_about_icon" android:layout_width="@dimen/about_icon_image_view_size" android:layout_height="@dimen/about_icon_image_view_size" android:layout_marginTop="@dimen/about_icon_image_view_margin_top" android:layout_marginBottom="@dimen/about_icon_image_view_margin_bottom" />
+        <TextView android:textSize="@dimen/about_label_text_size" android:textColor="#ff333333" android:layout_gravity="center" android:id="@id/anyshare_about_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+        <TextView android:textSize="@dimen/about_version_text_size" android:textColor="#ff333333" android:layout_gravity="center" android:id="@id/anyshare_version" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/about_version_text_margin_top" android:layout_marginBottom="@dimen/about_version_text_margin_bottom" />
+        <include layout="@layout/common_horizontal_divider" />
+        <ExpandableListView android:id="@id/content" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:divider="#00000000" />
+    </LinearLayout>
+</FrameLayout>

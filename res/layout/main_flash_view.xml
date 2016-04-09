@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/flash_screen" android:background="@drawable/common_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/help_img" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/help_logo" android:layout_width="@dimen/main_flash_logo_icon_width" android:layout_height="@dimen/main_flash_logo_icon_width" android:src="@drawable/main_flash_help_logo" />
+                <TextView android:textSize="@dimen/main_flash_logo_name_size" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/help_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_flash_logo_name_margintop" android:text="@string/app_name" />
+                <TextView android:textSize="@dimen/main_flash_help_info_size" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/flash_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flash_agreement_info" />
+                <ImageView android:layout_gravity="bottom|center" android:id="@id/channel_logo" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_flash_help_channel_marginbottom" />
+            </LinearLayout>
+            <ViewStub android:id="@id/agreement_stub" android:layout="@layout/main_flash_agreement_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <ViewStub android:id="@id/ad_stub" android:layout="@layout/main_flash_ad_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/account_avatarname_scrollview_margintBottom">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/avatar_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_avatarname_avatar_top_marginTop" android:layout_marginBottom="@dimen/account_avatarname_avatar_top_marginBottom" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/avatar" android:layout_width="@dimen/account_avatarname_avatar_width" android:layout_height="@dimen/account_avatarname_avatar_height" android:src="@drawable/common_preset_user_icon_1" />
+                <EditText android:textSize="@dimen/account_avatarname_account_textSize" android:textColor="#ff484848" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/account" android:background="@drawable/share_user_input_nickname_bg" android:padding="@dimen/account_avatarname_account_padding" android:layout_width="@dimen/account_avatarname_account_width" android:layout_height="@dimen/account_avatarname_account_height" android:layout_marginTop="@dimen/account_avatarname_account_margintTop" android:hint="@string/personal_avatar_nickname_hint" android:inputType="text" />
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/sync_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_avatarname_sync_nickname_margintTop">
+                    <TextView android:textSize="@dimen/account_avatarname_sync_nickname_textSize" android:textColor="#ff191919" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/account_avatarname_sync_nickname_maxWidth" android:text="@string/personal_avatar_nickname_social_name" />
+                    <ImageView android:layout_gravity="center" android:id="@id/checkbox" android:background="@drawable/common_checkbox" android:layout_width="@dimen/account_avatarname_checkbox_width" android:layout_height="@dimen/account_avatarname_checkbox_height" android:layout_marginLeft="@dimen/account_avatarname_checkbox_margintLeft" android:layout_marginStart="@dimen/account_avatarname_checkbox_margintLeft" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/avatar_list" android:background="@drawable/share_user_list_bg" android:layout_width="@dimen/account_avatarname_avatar_list_width" android:layout_height="@dimen/account_avatarname_avatar_list_height" android:layout_marginTop="@dimen/account_avatarname_avatar_list_margintTop" android:layout_below="@id/avatar_top" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/account_avatarname_usericon_marginBottom">
+                    <ImageView android:tag="icon1" android:background="@drawable/common_preset_user_icon_1" style="@style/PersonalUserIcon" />
+                    <ImageView android:tag="icon2" android:background="@drawable/common_preset_user_icon_2" style="@style/PersonalUserIcon" />
+                    <ImageView android:tag="icon3" android:background="@drawable/common_preset_user_icon_3" style="@style/PersonalUserIcon" />
+                    <ImageView android:tag="icon4" android:background="@drawable/common_preset_user_icon_4" style="@style/PersonalUserIcon" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/account_avatarname_usericon_marginBottom">
+                    <ImageView android:tag="icon5" android:background="@drawable/common_preset_user_icon_5" style="@style/PersonalUserIcon" />
+                    <ImageView android:tag="icon6" android:background="@drawable/common_preset_user_icon_6" style="@style/PersonalUserIcon" />
+                    <ImageView android:tag="icon7" android:background="@drawable/common_preset_user_icon_7" style="@style/PersonalUserIcon" />
+                    <ImageView android:tag="icon8" android:background="@drawable/common_preset_user_icon_8" style="@style/PersonalUserIcon" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_avatarname_camera_gallery_marginTop" android:layout_marginBottom="@dimen/account_avatarname_camera_gallery_marginBottom">
+                    <Button android:textSize="@dimen/account_avatarname_camera_gallery_textSize" android:textColor="@color/common_text_color_gray" android:id="@id/camera" android:background="@drawable/common_capsule_button_stroke_gray" android:layout_width="@dimen/account_avatarname_camera_gallery_width" android:layout_height="@dimen/account_avatarname_camera_gallery_height" android:text="@string/personal_avatar_nickname_camera" />
+                    <Button android:textSize="@dimen/account_avatarname_camera_gallery_textSize" android:textColor="@color/common_text_color_gray" android:id="@id/gallery" android:background="@drawable/common_capsule_button_stroke_gray" android:layout_width="@dimen/account_avatarname_camera_gallery_width" android:layout_height="@dimen/account_avatarname_camera_gallery_height" android:layout_marginLeft="@dimen/account_avatarname_gallery_margintLeft" android:text="@string/personal_avatar_nickname_gallery" android:layout_marginStart="@dimen/account_avatarname_gallery_margintLeft" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/account_avatarname_operator_height" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/account_avatarname_operator_textSize" android:textColor="@color/common_bottom_button_text_color" android:gravity="center" android:layout_gravity="bottom" android:id="@id/cancel" android:background="@drawable/account_send_button_bottom_left_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/common_operate_cancel" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/account_avatarname_operator_textSize" android:textColor="@color/common_bottom_button_text_color" android:gravity="center" android:layout_gravity="bottom" android:id="@id/ok" android:background="@drawable/account_send_button_bottom_right_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/common_operate_save" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

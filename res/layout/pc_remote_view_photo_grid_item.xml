@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/photo_special_grid_column_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/photo_layer" android:background="@drawable/pc_photo_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/child_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/common_subtitle_text_size" android:textColor="#ff757575" android:gravity="center" android:id="@id/child_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignBottom="@id/child_name" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="@dimen/common_title_text_size" android:textColor="#ff757575" android:gravity="center" android:id="@id/child_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/child_count" android:layout_toStartOf="@id/child_count" />
+    </RelativeLayout>
+</LinearLayout>

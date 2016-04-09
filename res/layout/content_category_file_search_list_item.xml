@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/common_content_list_child_bg" android:layout_width="fill_parent" android:layout_height="@dimen/content_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/anyshare_content_category_file_search_list_item_icon" style="@style/ListContentItemStyle.ImageView" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="start|center" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/anyshare_content_category_file_search_list_item_name" style="@style/ListContentItemStyle.Title" />
+                <TextView android:id="@id/anyshare_content_category_file_search_list_item_size" style="@style/ListContentItemStyle.Description" />
+            </LinearLayout>
+            <ImageView android:id="@id/anyshare_content_category_file_search_list_item_check" style="@style/ListContentItemStyle.CheckBox" />
+        </LinearLayout>
+        <include layout="@layout/common_horizontal_divider" />
+    </LinearLayout>
+</LinearLayout>

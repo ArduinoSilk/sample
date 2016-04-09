@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AnyShareRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">68.0dip</item>
+        <item name="android:progressDrawable">@drawable/widget_ratingbar</item>
+        <item name="android:minHeight">68.0dip</item>
+    </style>
+    <style name="AnyshareEntryTileText">
+        <item name="android:textSize">33.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:id">@id/title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">83.0dip</item>
+        <item name="android:layout_marginRight">83.0dip</item>
+    </style>
+</resources>

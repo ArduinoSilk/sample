@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="@dimen/common_capsule_button_radius" />
+            <solid android:color="@color/share_session_list_text_msg_color" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/common_capsule_button_radius" />
+            <solid android:color="@color/share_session_list_text_msg_color" />
+        </shape>
+    </item>
+</selector>

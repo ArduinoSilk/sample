@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="@dimen/setting_storage_content_marginBottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="start|center|top" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/setting_storage_content_textSize" android:textColor="#ff757575" android:ellipsize="end" android:gravity="start" android:layout_gravity="start" android:id="@id/storage_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/setting_storage_content_textSize" android:textColor="#ff757575" android:ellipsize="end" android:gravity="start" android:layout_gravity="start" android:id="@id/storage_position_dir" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/setting_storage_content_item_paddingtop" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:layout_gravity="end|center" android:id="@id/checkbox" android:background="@drawable/setting_check_button" android:clickable="false" android:layout_width="@dimen/setting_storage_item_checkbox" android:layout_height="@dimen/setting_storage_item_checkbox" android:layout_weight="0.0" />
+</LinearLayout>

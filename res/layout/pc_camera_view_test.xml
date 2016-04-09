@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/pc_camera_view" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/pc_camera_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="start|bottom|center" android:id="@id/pc_camera_reshot" android:background="@drawable/common_capsule_button_stroke_white" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/common_operate_retry" android:layout_marginStart="10.0dip" />
+    <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="end|bottom|center" android:id="@id/pc_camera_send" android:background="@drawable/common_capsule_button_stroke_white" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/common_operate_send" android:layout_marginEnd="10.0dip" />
+</FrameLayout>

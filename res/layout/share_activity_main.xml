@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="top" android:id="@id/share_content" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.lenovo.anyshare.base.EmptyFragment" android:id="@id/progress_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <fragment android:name="com.lenovo.anyshare.base.EmptyFragment" android:id="@id/discover" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <fragment android:name="com.lenovo.anyshare.base.EmptyFragment" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/share_discover_pop_window_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/share_discover_more_device_margin">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/share_discover_more_device_title_text_size" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/scan_pop_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/share_discover_more_device_title_padding_left" android:text="@string/share_discover_scan_pop_title" android:layout_weight="1.0" android:layout_marginStart="@dimen/share_discover_more_device_title_padding_left" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/scan_more_pop_close" android:padding="@dimen/share_discover_more_device_close_button_padding" android:layout_width="@dimen/share_discover_more_device_close_button_size" android:layout_height="@dimen/share_discover_more_device_close_button_size" android:src="@drawable/common_button_close_bg" />
+        </LinearLayout>
+        <include layout="@layout/common_horizontal_divider_middle" />
+        <ListView android:gravity="center" android:id="@id/scan_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@drawable/common_listview_divider_line" android:dividerHeight="@dimen/common_listview_divider_height" />
+    </LinearLayout>
+</merge>
